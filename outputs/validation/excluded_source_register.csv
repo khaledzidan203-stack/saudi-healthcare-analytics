@@ -1,0 +1,2 @@
+﻿SourceGroup,Domain,Decision,Reason,FutureUse
+FY-029,Blood Bank Activity,EXCLUDE_FROM_CORE_TREND,Measure definitions change materially across 2021–2024. 2021 includes separate transfusion and infectious-disease investigations; 2022–2023 use total investigations and collected/transfused units; 2024 introduces blood donors and changes the measure set.,May be analyzed separately after measure-level comparability contract is approved.

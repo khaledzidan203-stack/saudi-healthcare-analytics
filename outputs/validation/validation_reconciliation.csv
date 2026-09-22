@@ -1,0 +1,52 @@
+﻿Check,Status,Actual,Expected,Variance,Details
+fact_capacity row count,PASS,132,> 0,,
+fact_capacity duplicate grain,PASS,0,0,0,Duplicate natural keys
+fact_capacity null measure values,PASS,0,0,0,
+fact_capacity year coverage,PASS,2021 | 2022 | 2023 | 2024,2021 | 2022 | 2023 | 2024,,
+fact_activity row count,PASS,84,> 0,,
+fact_activity duplicate grain,PASS,0,0,0,Duplicate natural keys
+fact_activity null measure values,PASS,0,0,0,
+fact_activity year coverage,PASS,2021 | 2022 | 2023 | 2024,2021 | 2022 | 2023 | 2024,,
+fact_workforce_sector row count,PASS,72,> 0,,
+fact_workforce_sector duplicate grain,PASS,0,0,0,Duplicate natural keys
+fact_workforce_sector null measure values,PASS,0,0,0,
+fact_workforce_sector year coverage,PASS,2021 | 2022 | 2023 | 2024,2021 | 2022 | 2023 | 2024,,
+fact_workforce_nationality row count,PASS,95,> 0,,
+fact_workforce_nationality duplicate grain,PASS,0,0,0,Duplicate natural keys
+fact_workforce_nationality null measure values,PASS,0,0,0,
+fact_workforce_nationality year coverage,PASS,2021 | 2022 | 2023 | 2024,2021 | 2022 | 2023 | 2024,,
+FY-008 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Saudi
+FY-008 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Non-Saudi
+FY-008 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Saudi
+FY-008 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Non-Saudi
+FY-008 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Pharmacists / Non-Saudi
+FY-008 2021 EXPECTED_GRAIN_ROWS,FAIL,,,,Expected 12; extracted 11
+FY-010 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Saudi
+FY-010 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Non-Saudi
+FY-010 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Saudi
+FY-010 2021 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Non-Saudi
+FY-008 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Saudi
+FY-008 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Non-Saudi
+FY-008 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Saudi
+FY-008 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Non-Saudi
+FY-010 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Saudi
+FY-010 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Non-Saudi
+FY-010 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Saudi
+FY-010 2022 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Non-Saudi
+FY-008 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Saudi
+FY-008 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Non-Saudi
+FY-008 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Saudi
+FY-008 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Non-Saudi
+FY-010 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Saudi
+FY-010 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Non-Saudi
+FY-010 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Saudi
+FY-010 2023 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Non-Saudi
+FY-008 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Saudi
+FY-008 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Dentists / Non-Saudi
+FY-008 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Saudi
+FY-008 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Total / Midwives / Non-Saudi
+FY-010 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Saudi
+FY-010 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Dentists / Non-Saudi
+FY-010 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Saudi
+FY-010 2024 NUMERIC_EXTRACTION,FAIL,,,,No value for MOH Primary Health Care Centers / Midwives / Non-Saudi
+FY-006 vs FY-008 MOH Workforce Reconciliation,FAIL,23 PASS,24 PASS,1,FY006 Ministry of Health workforce count and Saudi% reconciled independently against FY008 Saudi + Non-Saudi.
