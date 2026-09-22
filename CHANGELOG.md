@@ -88,3 +88,35 @@ Added:
 ## Phase 1A — Source Discovery
 
 Added official workbook and worksheet inventory while preserving raw source immutability.
+
+---
+
+## Phase 3 — Final Formula Resolution Fix
+
+### Fixed
+
+The canonical extraction pipeline now resolves simple source formulas
+whose Excel cached result is unavailable.
+
+Confirmed regression:
+
+- 2021
+- MOH Total
+- Pharmacists
+- Non-Saudi
+- WorkforceCount = 131
+
+Expected workforce nationality fact:
+
+- 96 rows
+- zero duplicate natural keys
+
+### Production script
+
+Current:
+
+`src/transformation/09_build_canonical_dataset.py`
+
+Superseded and removed:
+
+`src/transformation/08_build_canonical_dataset.py`

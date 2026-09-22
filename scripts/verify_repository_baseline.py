@@ -13,7 +13,7 @@ REQUIRED_SCRIPTS = [
     "src/discovery/04_final_discovery_scope.py",
     "src/discovery/05_validate_data_contract.py",
     "src/discovery/06_build_core_validation_pack.py",
-    "src/transformation/08_build_canonical_dataset.py",
+    "src/transformation/09_build_canonical_dataset.py",
 ]
 
 REQUIRED_DOCS = [
@@ -527,3 +527,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

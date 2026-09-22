@@ -125,7 +125,7 @@ Business definition, grain, geography, units and totals must also be compatible.
 
 ## Phase 3 — Canonical Dataset
 
-### 08_build_canonical_dataset.py
+### 09_build_canonical_dataset.py
 
 **Purpose**
 
@@ -229,3 +229,31 @@ A successful run must end with:
 and
 
 `READY FOR PHASE 4 — SQL FOUNDATION`
+
+---
+
+## Phase 3 Formula Resolution Fix
+
+### 09_build_canonical_dataset.py
+
+The production canonical pipeline now resolves source numeric values using:
+
+1. literal source values;
+2. Excel cached calculated values;
+3. conservative evaluation of simple referenced-cell formulas when a cached result is unavailable.
+
+This specifically protects source cells such as:
+
+`='[1]2-15'!G25+'[1]2-19'!G25`
+
+The pipeline does not implement a general Excel formula engine and does not guess unsupported formulas.
+
+Validated regression contract:
+
+`2021 × MOH Total × Pharmacists × Non-Saudi = 131`
+
+Expected workforce nationality grain:
+
+`4 years × 2 scopes × 6 workforce types × 2 nationalities = 96 rows`
+
+Superseded `08_build_canonical_dataset.py` is removed from the active codebase.
