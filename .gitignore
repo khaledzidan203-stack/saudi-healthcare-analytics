@@ -1,0 +1,47 @@
+﻿# ============================================================
+# Saudi Healthcare Analytics — Git Ignore
+# ============================================================
+
+# Official raw source workbooks
+row_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+*.env
+!.env.example
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary Office files
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
