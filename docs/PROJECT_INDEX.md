@@ -4,11 +4,11 @@
 
 Current validated stage:
 
-**Phase 3 — Canonical Dataset Validated; SQL Foundation Next**
+**SQL Server Analytical Foundation Validated; Power BI Next**
 
 Next planned stage:
 
-**SQL Environment Discovery and Star Schema**
+**User creates initial Power BI PBIP manually**
 
 ---
 
@@ -125,7 +125,7 @@ See:
 
 ## Next Gate
 
-Phase 3 passed. The SQL star schema, SQL validation, KPI contracts, EDA
-outputs, and Power BI handoff package are now prepared. Power BI implementation
-is the next user-owned step.
+The SQL Server analytical star schema, SQL validation, KPI contracts, EDA
+outputs, and Power BI handoff package are prepared. Power BI implementation is
+the next user-owned step.
 

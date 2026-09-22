@@ -11,7 +11,7 @@ using official Saudi Ministry of Health data.
 
 ## Current Phase
 
-Phase 4 — SQL Foundation / Star Schema
+Phase 4 — SQL Server Analytical Foundation Validated
 
 ## Planned Phases
 

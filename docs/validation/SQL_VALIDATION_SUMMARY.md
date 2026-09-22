@@ -1,7 +1,10 @@
 # SQL Validation Summary
 
-The SQLite model is reconciled back to the validated canonical CSVs by
-`scripts/validate_sqlite_model.py`.
+The final SQL Server model is independently reconciled back to the validated
+canonical CSVs and the SQLite reference by
+`scripts/validate_sqlserver_model.py`.
+
+Connection: `localhost` / `SaudiHealthcareAnalytics` / Windows Authentication.
 
 Required results:
 
@@ -15,3 +18,5 @@ Required results:
 - FY-006 ↔ FY-008 workforce reconciliation passed
 
 Machine-readable output: `outputs/validation/sql_validation.json`.
+
+SQL Server machine-readable output: `outputs/validation/sqlserver_validation.json`.

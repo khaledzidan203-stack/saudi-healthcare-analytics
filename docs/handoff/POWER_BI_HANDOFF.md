@@ -2,7 +2,7 @@
 
 ## Semantic model recommendation
 
-Use the four validated facts and five dimensions from the SQLite model. Relate
+Use the four validated facts and five dimensions from the SQL Server model. Relate
 each fact to `dim_year`; relate geography-compatible facts to `dim_geography`,
 sector facts to `dim_sector`, and workforce facts to their workforce and
 nationality dimensions. Keep filter direction single-direction from dimensions
@@ -21,6 +21,25 @@ same hierarchy.
 Recommended slicers: Year, Sector, WorkforceType, Nationality, Scope,
 GeographyType and Geography, with geography-level selections kept explicit.
 
+## Validated connection
+
+- Server: `localhost`
+- Database: `SaudiHealthcareAnalytics`
+- Authentication: Windows Authentication
+- Mode: Import
+
+Import only these SQL Server tables from schema `analytics`:
+
+- `DimYear`
+- `DimGeography`
+- `DimSector`
+- `DimWorkforceType`
+- `DimNationality`
+- `FactCapacity`
+- `FactActivity`
+- `FactWorkforceSector`
+- `FactWorkforceNationality`
+
 ## DAX backlog only
 
 Create measures for additive counts, ratio-of-totals cases per center/ambulance,
@@ -34,4 +53,5 @@ Cluster are not mapped to Administrative Region. FY-029 Blood Bank is excluded
 from the core trend. No causal inference is supported by these descriptive data.
 
 Power BI files, semantic models, DAX, Power Query, and report pages are
-intentionally not created in this repository.
+intentionally not created in this repository. Do not load raw Excel, canonical
+CSVs, or SQLite into the final Power BI model.

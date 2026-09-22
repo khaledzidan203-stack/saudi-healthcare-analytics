@@ -1,12 +1,17 @@
 # SQL Star Schema
 
-## Engine
+## Final Engine
 
-The project uses SQLite 3.50.4 through the existing Python 3.13 standard
-library. PostgreSQL 17 is installed and running but requires unavailable local
-credentials; SQL Server is installed but local ODBC connectivity fails before
-database authentication. SQLite is therefore the reproducible, portable
-engine selected for this repository.
+The final Power BI analytical source is SQL Server 2025 Developer Edition,
+server `localhost`, database `SaudiHealthcareAnalytics`, schema `analytics`,
+using Windows Authentication. The validated SQLite database remains an
+intermediate/reference baseline only.
+
+## Reference Engine
+
+SQLite 3.50.4 remains available at
+`data/processed/sqlite/healthcare_analytics.sqlite` for cross-engine
+reconciliation.
 
 ## Tables and grain
 
@@ -23,10 +28,12 @@ engine selected for this repository.
   WorkforceType × Nationality.
 
 All facts use surrogate integer dimension keys, retained source lineage, NOT
-NULL primary measures, and unique constraints on their business grain.
+NULL primary measures, and unique constraints on their business grain. SQL
+Server fact values use `decimal(28,15)` to preserve published rates exactly.
 
 ## Load order
 
-`00_create_database_or_schema.sql` → dimensions → facts → indexes. The
-`scripts/build_sqlite_model.py` loader maps canonical CSV labels to dimension
-keys and refuses duplicate business grains through database constraints.
+`00_create_database.sql` → dimensions → facts → indexes. The
+`scripts/build_sqlserver_model.py` loader maps canonical CSV labels to
+dimension keys and refuses duplicate business grains through database
+constraints. Validation is executed by `scripts/validate_sqlserver_model.py`.

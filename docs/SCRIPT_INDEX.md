@@ -268,3 +268,8 @@ Superseded `08_build_canonical_dataset.py` is removed from the active codebase.
   keys, joins, and workforce totals.
 - `scripts/build_eda_outputs.py` — produce reusable national and regional
   analytical tables without pandas.
+- `scripts/build_sqlserver_model.py` — load governed canonical CSVs into the
+  final SQL Server `analytics` schema.
+- `scripts/validate_sqlserver_model.py` — independently validate SQL Server
+  grains, keys, joins, canonical reconciliation, SQLite reconciliation, and
+  workforce cross-source totals.

@@ -19,13 +19,17 @@ activities across Saudi Arabia from 2021 to 2024.
 
 ## Project Status
 
-Current Phase: SQL Foundation / Star Schema
+Current Phase: SQL Server Analytical Foundation Validated
 
 ## Data Source
 
 Official Saudi Ministry of Health Statistical Yearbooks, 2021–2024.
 
 Raw source files are preserved unchanged in the local `row_data` folder.
+
+Final Power BI source: SQL Server `localhost`, database
+`SaudiHealthcareAnalytics`, Windows Authentication, Import mode. SQLite is
+retained only as a validated analytical reference.
 
 ## Analytical Workflow
 

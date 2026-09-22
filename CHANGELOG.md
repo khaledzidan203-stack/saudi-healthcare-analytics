@@ -4,6 +4,28 @@ All notable validated analytical changes to this project are documented here.
 
 ---
 
+## SQL Server Analytical Foundation
+
+### Added
+
+- SQL Server schema `analytics` in `SaudiHealthcareAnalytics`
+- five dimensions and four validated fact tables
+- governed canonical loader and independent SQL Server validation
+- exact canonical and SQLite reference reconciliation
+
+### Validation
+
+- FactCapacity: 132
+- FactActivity: 84
+- FactWorkforceSector: 72
+- FactWorkforceNationality: 96
+- broken foreign keys: 0
+- duplicate fact grains: 0
+- FY006 ↔ FY008: 24 / 24 passed
+- 2021 MOH Total Pharmacists Non-Saudi: 131
+
+---
+
 ## Phase 3 — Canonical Validation Repair
 
 ### Fixed

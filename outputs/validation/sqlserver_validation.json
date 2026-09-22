@@ -1,0 +1,217 @@
+{
+  "status": "PASS",
+  "server": "localhost",
+  "database": "SaudiHealthcareAnalytics",
+  "checks": [
+    {
+      "name": "FactCapacity_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 132,
+        "actual": 132
+      }
+    },
+    {
+      "name": "FactActivity_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 84,
+        "actual": 84
+      }
+    },
+    {
+      "name": "FactWorkforceSector_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 72,
+        "actual": 72
+      }
+    },
+    {
+      "name": "FactWorkforceNationality_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 96,
+        "actual": 96
+      }
+    },
+    {
+      "name": "DimYear_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "DimGeography_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "DimSector_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "DimWorkforceType_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "DimNationality_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactCapacity_duplicate_grain",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactActivity_duplicate_grain",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactWorkforceSector_duplicate_grain",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactWorkforceNationality_duplicate_grain",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "broken_foreign_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactCapacity_required_measure_nulls",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactCapacity_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "FactActivity_required_measure_nulls",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactActivity_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "FactWorkforceSector_required_measure_nulls",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactWorkforceSector_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "FactWorkforceNationality_required_measure_nulls",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "FactWorkforceNationality_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "FactCapacity_joined_rows_preserved",
+      "status": "PASS",
+      "details": {
+        "base": 132,
+        "joined": 132
+      }
+    },
+    {
+      "name": "FactActivity_joined_rows_preserved",
+      "status": "PASS",
+      "details": {
+        "base": 84,
+        "joined": 84
+      }
+    },
+    {
+      "name": "FactWorkforceSector_joined_rows_preserved",
+      "status": "PASS",
+      "details": {
+        "base": 72,
+        "joined": 72
+      }
+    },
+    {
+      "name": "FactWorkforceNationality_joined_rows_preserved",
+      "status": "PASS",
+      "details": {
+        "base": 96,
+        "joined": 96
+      }
+    },
+    {
+      "name": "canonical_sqlserver_reconciliation",
+      "status": "PASS",
+      "details": {
+        "FactCapacity": true,
+        "FactActivity": true,
+        "FactWorkforceNationality": true,
+        "FactWorkforceSector": true
+      }
+    },
+    {
+      "name": "fy008_regression",
+      "status": "PASS",
+      "details": 131
+    },
+    {
+      "name": "fy006_fy008_reconciliation",
+      "status": "PASS",
+      "details": {
+        "passed": 24,
+        "expected": 24,
+        "failures": 0
+      }
+    },
+    {
+      "name": "FactCapacity_sqlite_baseline_count",
+      "status": "PASS",
+      "details": {
+        "sqlserver": 132,
+        "sqlite": 132
+      }
+    },
+    {
+      "name": "FactActivity_sqlite_baseline_count",
+      "status": "PASS",
+      "details": {
+        "sqlserver": 84,
+        "sqlite": 84
+      }
+    },
+    {
+      "name": "FactWorkforceSector_sqlite_baseline_count",
+      "status": "PASS",
+      "details": {
+        "sqlserver": 72,
+        "sqlite": 72
+      }
+    },
+    {
+      "name": "FactWorkforceNationality_sqlite_baseline_count",
+      "status": "PASS",
+      "details": {
+        "sqlserver": 96,
+        "sqlite": 96
+      }
+    }
+  ]
+}
