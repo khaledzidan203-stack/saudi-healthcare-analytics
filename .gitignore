@@ -20,9 +20,8 @@ env/
 *.env
 !.env.example
 
-# IDE
-.vscode/*
-!.vscode/settings.json
+# IDE - local developer settings
+.vscode/
 
 # OS
 Thumbs.db
@@ -45,3 +44,4 @@ Thumbs.db
 dist/
 build/
 *.egg-info/
+
