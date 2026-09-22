@@ -191,3 +191,41 @@ For every future analytical phase:
 9. Continue to the next phase only after the validation gate passes.
 
 Git is the official history of the analytical codebase.
+
+---
+
+## Repository Validation Utility
+
+### verify_repository_baseline.py
+
+**Location**
+
+`scripts/verify_repository_baseline.py`
+
+**Purpose**
+
+Permanent regression and repository audit utility.
+
+**Validates**
+
+- required production scripts are Git tracked
+- required project documentation is Git tracked
+- official raw source workbooks are not Git tracked
+- superseded Phase 3 script is absent
+- canonical fact outputs exist
+- canonical natural grains contain no duplicates
+- primary measures are populated
+- reporting years cover 2021–2024
+- workforce nationality fact contains the complete 96-row matrix
+- FY-008 regression case:
+  `2021 × MOH Total × Pharmacists × Non-Saudi = 131`
+
+**Gate**
+
+A successful run must end with:
+
+`PASS: PROJECT BASELINE AND PHASE 3 FULLY VERIFIED`
+
+and
+
+`READY FOR PHASE 4 — SQL FOUNDATION`
