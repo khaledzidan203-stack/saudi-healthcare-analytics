@@ -1,0 +1,132 @@
+﻿comparison_group_id,source_year,topic,workbook_name,sheet_name,grain_candidate,geography_candidate,units_candidate,confirmed_grain,confirmed_key_columns,confirmed_measure_columns,manual_status
+FY-001,2021,Population,Statistical-Yearbook-2021-Chapter-I-Health-Indicators.xlsx,1,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT | PER_1000 | RATE,,,,PENDING
+FY-001,2022,Population,2022-Chapter-I-Health-Indicators.xlsx,1,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT | PER_1000 | RATE,,,,PENDING
+FY-001,2023,Population,Statistical-Yearbook-2023.xlsx,1,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT | PER_1000 | RATE,,,,PENDING
+FY-001,2024,Population,Statistical-Yearbook-2024.xlsx,1-1,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT | PER_1000 | RATE,,,,PENDING
+FY-003,2021,Population,Statistical-Yearbook-2021-Chapter-I-Health-Indicators.xlsx,8,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,PER_1000 | RATE,,,,PENDING
+FY-003,2022,Population,2022-Chapter-I-Health-Indicators.xlsx,7,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,PER_1000 | RATE,,,,PENDING
+FY-003,2023,Population,Statistical-Yearbook-2023.xlsx,12,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,PER_1000 | RATE,,,,PENDING
+FY-003,2024,Population,Statistical-Yearbook-2024.xlsx,1-11,Year × National / Other Geography × Population Measure,UNKNOWN_OR_NATIONAL,PER_1000 | RATE,,,,PENDING
+FY-005,2021,Population | Capacity,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2-2,Year × National / Other Geography × Facility / Capacity Measure × Population Measure,UNKNOWN_OR_NATIONAL,BEDS | PER_10000 | RATE,,,,PENDING
+FY-005,2022,Population | Capacity,2022-Chapter-II-Health-Resources.xlsx,2-2,Year × National / Other Geography × Facility / Capacity Measure × Population Measure,UNKNOWN_OR_NATIONAL,BEDS | PER_10000 | RATE,,,,PENDING
+FY-005,2023,Population | Capacity,Statistical-Yearbook-2023.xlsx,2.,Year × National / Other Geography × Facility / Capacity Measure × Population Measure,UNKNOWN_OR_NATIONAL,BEDS | PER_10000 | RATE,,,,PENDING
+FY-005,2024,Population | Capacity,Statistical-Yearbook-2024.xlsx,2-2,Year × National / Other Geography × Facility / Capacity Measure × Population Measure,UNKNOWN_OR_NATIONAL,BEDS | PER_10000 | RATE,,,,PENDING
+FY-006,2021,Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2-4,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-006,2022,Workforce,2022-Chapter-II-Health-Resources.xlsx,2-4,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-006,2023,Workforce,Statistical-Yearbook-2023.xlsx,4.,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-006,2024,Workforce,Statistical-Yearbook-2024.xlsx,2-17,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-007,2021,Workforce | Activity,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2-5,Year × National / Other Geography × Workforce Type / Profession × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-007,2022,Workforce | Activity,2022-Chapter-II-Health-Resources.xlsx,2-5,Year × National / Other Geography × Workforce Type / Profession × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-007,2023,Workforce | Activity,Statistical-Yearbook-2023.xlsx,5.,Year × National / Other Geography × Workforce Type / Profession × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-007,2024,Workforce | Activity,Statistical-Yearbook-2024.xlsx,2-19,Year × National / Other Geography × Workforce Type / Profession × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-008,2021,Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2-8 ,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-008,2022,Workforce,2022-Chapter-II-Health-Resources.xlsx,2-8 ,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-008,2023,Workforce,Statistical-Yearbook-2023.xlsx,13.,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-008,2024,Workforce,Statistical-Yearbook-2024.xlsx,2-37,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-009,2021,Capacity | Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.17,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-009,2022,Capacity | Workforce,2022-Chapter-II-Health-Resources.xlsx,2.17,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-009,2023,Capacity | Workforce,Statistical-Yearbook-2023.xlsx,22,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-009,2024,Capacity | Workforce,Statistical-Yearbook-2024.xlsx,2-40,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-010,2021,Capacity | Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.21,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-010,2022,Capacity | Workforce,2022-Chapter-II-Health-Resources.xlsx,2.21,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-010,2023,Capacity | Workforce,Statistical-Yearbook-2023.xlsx,26,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-010,2024,Capacity | Workforce,Statistical-Yearbook-2024.xlsx,2-42,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-011,2021,Capacity | Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.22,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-011,2022,Capacity | Workforce,2022-Chapter-II-Health-Resources.xlsx,2.22,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-011,2023,Capacity | Workforce,Statistical-Yearbook-2023.xlsx,27,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-011,2024,Capacity | Workforce,Statistical-Yearbook-2024.xlsx,2-43,Year × National / Other Geography × Workforce Type / Profession × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-012,2021,Capacity | Activity,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.25,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-012,2022,Capacity | Activity,2022-Chapter-II-Health-Resources.xlsx,2.25,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-012,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,30,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-012,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,2-10,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,BEDS,,,,PENDING
+FY-013,2021,Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.28,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-013,2022,Workforce,2022-Chapter-II-Health-Resources.xlsx,2.28,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-013,2023,Workforce,Statistical-Yearbook-2023.xlsx,33,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-013,2024,Workforce,Statistical-Yearbook-2024.xlsx,2-38,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-014,2021,Workforce,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2-33,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-014,2022,Workforce,2022-Chapter-II-Health-Resources.xlsx,2-33,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-014,2023,Workforce,Statistical-Yearbook-2023.xlsx,38,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-014,2024,Workforce,Statistical-Yearbook-2024.xlsx,2-39,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-015,2021,Workforce,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,40,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-015,2022,Workforce,2022-Chapter-II-Health-Resources.xlsx,2.40,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-015,2022,Workforce,2022-Chapter-IV-Health-Activities.xlsx,39,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-015,2023,Workforce,Statistical-Yearbook-2023.xlsx,39.,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-015,2024,Workforce,Statistical-Yearbook-2024.xlsx,4-49,Year × National / Other Geography × Workforce Type / Profession,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-016,2021,Capacity,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.43,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-016,2022,Capacity,2022-Chapter-II-Health-Resources.xlsx,2.43,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-016,2023,Capacity,Statistical-Yearbook-2023.xlsx,51,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-016,2024,Capacity,Statistical-Yearbook-2024.xlsx,2-58,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-017,2021,Capacity,statistical-yearbook-2021-chapter-II-health-resources.xlsx,2.44,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-017,2022,Capacity,2022-Chapter-II-Health-Resources.xlsx,2.44,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-017,2023,Capacity,Statistical-Yearbook-2023.xlsx,52,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,,,,,PENDING
+FY-017,2024,Capacity,Statistical-Yearbook-2024.xlsx,2-59,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-018,2021,Capacity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,COUNT,,,,PENDING
+FY-018,2022,Capacity,2022-Chapter-IV-Health-Activities.xlsx,7,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,COUNT,,,,PENDING
+FY-018,2023,Capacity,Statistical-Yearbook-2023.xlsx,7..,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,COUNT,,,,PENDING
+FY-018,2024,Capacity,Statistical-Yearbook-2024.xlsx,4-8,Year × Health Region × Facility / Capacity Measure,HEALTH_REGION,COUNT,,,,PENDING
+FY-020,2021,Population | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,12,Year × National / Other Geography × Activity Type × Population Measure,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-020,2022,Population | Activity,2022-Chapter-IV-Health-Activities.xlsx,12,Year × National / Other Geography × Activity Type × Population Measure,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-020,2023,Population | Activity,Statistical-Yearbook-2023.xlsx,12..,Year × National / Other Geography × Activity Type × Population Measure,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-020,2024,Population | Activity,Statistical-Yearbook-2024.xlsx,4-15,Year × National / Other Geography × Activity Type × Population Measure,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-021,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,15,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-021,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,15,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-021,2023,Activity,Statistical-Yearbook-2023.xlsx,15..,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-021,2024,Activity,Statistical-Yearbook-2024.xlsx,4-18,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,RATE,,,,PENDING
+FY-022,2021,Capacity | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,25,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-022,2022,Capacity | Activity,2022-Chapter-IV-Health-Activities.xlsx,24,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-022,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,24.,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-022,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,4-27,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-023,2021,Capacity | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,26,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-023,2022,Capacity | Activity,2022-Chapter-IV-Health-Activities.xlsx,25,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-023,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,25.,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-023,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,4-31,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-024,2021,Capacity | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,31,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-024,2022,Capacity | Activity,2022-Chapter-IV-Health-Activities.xlsx,30,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-024,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,30.,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-024,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,4-37,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-025,2021,Capacity | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,32,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-025,2022,Capacity | Activity,2022-Chapter-IV-Health-Activities.xlsx,31,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-025,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,31.,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-025,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,4-39,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-026,2021,Capacity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,34,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-026,2022,Capacity,2022-Chapter-IV-Health-Activities.xlsx,33,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-026,2023,Capacity,Statistical-Yearbook-2023.xlsx,33.,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-026,2024,Capacity,Statistical-Yearbook-2024.xlsx,4-41,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,COUNT | PERCENT,,,,PENDING
+FY-028,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,44,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-028,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,42,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-028,2023,Activity,Statistical-Yearbook-2023.xlsx,43.,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-028,2024,Activity,Statistical-Yearbook-2024.xlsx,4-55,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-029,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,47,Year × Health Region × Activity Type,HEALTH_REGION,COUNT,,,,PENDING
+FY-029,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,45,Year × Health Region × Activity Type,HEALTH_REGION,COUNT,,,,PENDING
+FY-029,2023,Activity,Statistical-Yearbook-2023.xlsx,46.,Year × Health Region × Activity Type,HEALTH_REGION,COUNT,,,,PENDING
+FY-029,2024,Activity,Statistical-Yearbook-2024.xlsx,4-59,Year × Health Region × Activity Type,HEALTH_REGION,COUNT,,,,PENDING
+FY-030,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,48,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,54,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,46,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,52,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2023,Activity,Statistical-Yearbook-2023.xlsx,47.,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2023,Activity,Statistical-Yearbook-2023.xlsx,53.,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2023,Activity,Statistical-Yearbook-2023.xlsx,5-12,Year × Health Region × Activity Type,HEALTH_REGION,,,,,PENDING
+FY-030,2024,Activity,Statistical-Yearbook-2024.xlsx,4-60,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2024,Activity,Statistical-Yearbook-2024.xlsx,4-64,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-030,2024,Activity,Statistical-Yearbook-2024.xlsx,5-12,Year × Health Region × Activity Type,HEALTH_REGION,,,,,PENDING
+FY-031,2021,Capacity | Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,49,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-031,2022,Capacity | Activity,2022-Chapter-IV-Health-Activities.xlsx,47,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-031,2023,Capacity | Activity,Statistical-Yearbook-2023.xlsx,48.,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-031,2024,Capacity | Activity,Statistical-Yearbook-2024.xlsx,4-61,Year × National / Other Geography × Facility / Capacity Measure × Activity Type,UNKNOWN_OR_NATIONAL,COUNT,,,,PENDING
+FY-032,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,fig1,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-032,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,fig1,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-032,2023,Activity,Statistical-Yearbook-2023.xlsx,fig1,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-032,2024,Activity,Statistical-Yearbook-2024.xlsx,fig1,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-033,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,fig2,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,PERCENT,,,,PENDING
+FY-033,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,fig2,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,PERCENT,,,,PENDING
+FY-033,2023,Activity,Statistical-Yearbook-2023.xlsx,fig2,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,PERCENT,,,,PENDING
+FY-033,2024,Activity,Statistical-Yearbook-2024.xlsx,fig2,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,PERCENT,,,,PENDING
+FY-034,2021,Capacity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,fig3,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-034,2022,Capacity,2022-Chapter-IV-Health-Activities.xlsx,fig3,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-034,2023,Capacity,Statistical-Yearbook-2023.xlsx,fig3,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-034,2024,Capacity,Statistical-Yearbook-2024.xlsx,fig3,Year × National / Other Geography × Facility / Capacity Measure,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-036,2021,Activity,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,fig5,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-036,2022,Activity,2022-Chapter-IV-Health-Activities.xlsx,fig5,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-036,2023,Activity,Statistical-Yearbook-2023.xlsx,fig5,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
+FY-036,2024,Activity,Statistical-Yearbook-2024.xlsx,fig5,Year × National / Other Geography × Activity Type,UNKNOWN_OR_NATIONAL,,,,,PENDING
