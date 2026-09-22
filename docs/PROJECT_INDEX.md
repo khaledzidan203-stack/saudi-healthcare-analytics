@@ -4,11 +4,11 @@
 
 Current validated stage:
 
-**SQL Server Analytical Foundation Validated; Power BI Next**
+**SQL Server Analytical Foundation and Governed DAX Runtime Validated**
 
 Next planned stage:
 
-**User creates initial Power BI PBIP manually**
+**Report page architecture / index planning**
 
 ---
 

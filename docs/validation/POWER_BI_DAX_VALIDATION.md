@@ -2,10 +2,11 @@
 
 ## Status
 
-**STATIC PASS — RUNTIME PENDING**
+**RUNTIME PASS — 12/12 MEASURES**
 
 Tabular Editor 2.28.0 successfully loaded the TMDL model with 10 tables, 12
-measures, and 14 relationships. The repository static validator also passed.
+measures, and 14 relationships. The active PBIP runtime validated all 12
+measures against the approved SQL baselines.
 
 ## Static semantic checks
 
@@ -34,13 +35,27 @@ FY008 remains 24/24 PASS.
 Machine-readable result:
 `outputs/validation/powerbi_dax_sql_baselines.json`.
 
-## Runtime limitation
+## Runtime validation
 
-The PBIP was not active after the external TMDL update, so the new measures
-could not be queried through a live local Analysis Services endpoint. Runtime
-results, differences, and final SQL ↔ DAX value reconciliation remain pending.
+The active PBIP was confirmed at
+`D:\Saudi_Healthcare_Analytics_Raw_Data\powerbi\SaudiHealthcareAnalytics.pbip`.
+All 12 measures executed successfully and reconciled to SQL for 2021–2024.
+The known 2021 MOH Total / Pharmacists / Non-Saudi regression returned 131.
+Runtime structure passed: 14 relationships, 0 M:M, 0 bidirectional, 0
+inactive, 0 `_Measures` relationships, 10 tables, 1 page, and 0 visuals.
 
-To complete runtime validation, reopen
-`powerbi/SaudiHealthcareAnalytics.pbip` in Power BI Desktop, allow the model to
-load, and expose the local model endpoint. No validation page or visual is
-required.
+`Cases per Center` and `Cases per Ambulance` were corrected from the failing
+single-line multi-`VAR` serialization to direct ratio-of-totals
+`DIVIDE(CALCULATE(...), CALCULATE(...))` expressions. The direct expressions
+execute successfully in the live model. SQL baselines are rounded to six
+decimals; runtime comparison allows the corresponding absolute rounding
+envelope.
+
+The repository static validator's placeholder and relationship-property checks
+are stale artifacts: the current TMDL stores the valid defaults/runtime
+metadata rather than explicit relationship property lines, and the placeholder
+check assumes an older line layout. The live model confirms the required
+structure and no semantic-model discrepancy was found.
+
+Machine-readable result:
+`outputs/validation/powerbi_dax_runtime_validation.json`.

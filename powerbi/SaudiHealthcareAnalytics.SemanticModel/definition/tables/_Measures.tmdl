@@ -51,12 +51,12 @@ table _Measures
 		displayFolder: 05 Red Crescent / Regional
 		lineageTag: 6a730861-4fc1-4454-b19e-c84dc1ed1249
 
-	measure 'Cases per Center' = VAR Cases = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")) VAR Centers = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "First Aid Centers")) RETURN DIVIDE(Cases, Centers)
+	measure 'Cases per Center' = DIVIDE(CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")), CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "First Aid Centers")))
 		formatString: #,0.0
 		displayFolder: 05 Red Crescent / Regional
 		lineageTag: 6ef55b32-0e57-4f7e-9a80-529327d8dd60
 
-	measure 'Cases per Ambulance' = VAR Cases = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")) VAR Ambulances = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Ambulances")) RETURN DIVIDE(Cases, Ambulances)
+	measure 'Cases per Ambulance' = DIVIDE(CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")), CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Ambulances")))
 		formatString: #,0.0
 		displayFolder: 05 Red Crescent / Regional
 		lineageTag: 2d3fc681-2118-4b13-ae9a-0dde60a1e04c

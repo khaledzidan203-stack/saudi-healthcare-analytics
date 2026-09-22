@@ -1,0 +1,451 @@
+﻿{
+    "Status":  "PASS",
+    "Server":  "localhost",
+    "Port":  58749,
+    "Database":  "883c412d-5687-431e-9535-0ab43f44ed74",
+    "MeasuresExecuted":  12,
+    "Results":  [
+                    {
+                        "Measure":  "Hospitals",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  497,
+                                                "DAX":  497,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  493,
+                                                "DAX":  493,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  499,
+                                                "DAX":  499,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  516,
+                                                "DAX":  516,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Beds",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  77224,
+                                                "DAX":  77224,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  78440,
+                                                "DAX":  78440,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  80072,
+                                                "DAX":  80072,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  82721,
+                                                "DAX":  82721,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Beds per 10,000 Population",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  22.6,
+                                                "DAX":  22.6,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  24.3,
+                                                "DAX":  24.3,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  23.7,
+                                                "DAX":  23.7,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  23.433525173171432,
+                                                "DAX":  23.433525173171432,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Workforce Count",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  485688,
+                                                "DAX":  485688,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  502189,
+                                                "DAX":  502189,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  547875,
+                                                "DAX":  547875,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  681914,
+                                                "DAX":  681914,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Saudi Workforce Share",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  0.703435195113,
+                                                "DAX":  0.70343519511323394,
+                                                "Difference":  2.3392399128852048E-13,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  0.733621828595,
+                                                "DAX":  0.73362182859584024,
+                                                "Difference":  8.4021678503631847E-13,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  0.743448177633,
+                                                "DAX":  0.74344817763384763,
+                                                "Difference":  8.47655279301307E-13,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  0.742869524634,
+                                                "DAX":  0.74286952463497569,
+                                                "Difference":  9.7566399404058757E-13,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Encounters",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  146627997.222,
+                                                "DAX":  146627997.222,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  167312098,
+                                                "DAX":  167312098,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  171592965,
+                                                "DAX":  171592965,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  170231304,
+                                                "DAX":  170231304,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Encounters per Person",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  4.3,
+                                                "DAX":  4.3,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  5.2,
+                                                "DAX":  5.2,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  5.1,
+                                                "DAX":  5.1,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  4.8,
+                                                "DAX":  4.8,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Admissions",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  3100752,
+                                                "DAX":  3100752,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  2702460,
+                                                "DAX":  2702460,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  3831824,
+                                                "DAX":  3831824,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  3630334,
+                                                "DAX":  3630334,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Admissions per 100 Persons",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  9.1,
+                                                "DAX":  9.1,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  8.4,
+                                                "DAX":  8.4,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  11.3,
+                                                "DAX":  11.3,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  10.3,
+                                                "DAX":  10.3,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Red Crescent Cases",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  458449,
+                                                "DAX":  458449,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  534912,
+                                                "DAX":  534912,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  580957,
+                                                "DAX":  580957,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  566288,
+                                                "DAX":  566288,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Cases per Center",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  902.458661,
+                                                "DAX":  902.45866141732279,
+                                                "Difference":  4.1732278077688534E-07,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  1050.907662,
+                                                "DAX":  1050.9076620825147,
+                                                "Difference":  8.2514588939375244E-08,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  1130.266536,
+                                                "DAX":  1130.2665369649806,
+                                                "Difference":  9.6498047241766471E-07,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  1097.457364,
+                                                "DAX":  1097.4573643410852,
+                                                "Difference":  3.4108506952179596E-07,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    },
+                    {
+                        "Measure":  "Cases per Ambulance",
+                        "Context":  "Year = 2021, 2022, 2023, 2024; all other filters unselected",
+                        "Comparisons":  [
+                                            {
+                                                "Year":  2021,
+                                                "SQL":  326.530626,
+                                                "DAX":  326.53062678062679,
+                                                "Difference":  7.8062680586299393E-07,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2022,
+                                                "SQL":  354.951559,
+                                                "DAX":  354.95155938951558,
+                                                "Difference":  3.8951560554778553E-07,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2023,
+                                                "SQL":  435.5,
+                                                "DAX":  435.5,
+                                                "Difference":  0,
+                                                "Status":  "PASS"
+                                            },
+                                            {
+                                                "Year":  2024,
+                                                "SQL":  538.296577,
+                                                "DAX":  538.296577946768,
+                                                "Difference":  9.4676806838833727E-07,
+                                                "Status":  "PASS"
+                                            }
+                                        ],
+                        "Status":  "PASS"
+                    }
+                ],
+    "KnownRegression":  {
+                            "Context":  "2021 / MOH Total / Pharmacists / Non-Saudi",
+                            "SQL":  131,
+                            "DAX":  131,
+                            "Difference":  0,
+                            "Status":  "PASS"
+                        },
+    "Metadata":  {
+                     "Tables":  10,
+                     "Measures":  12,
+                     "MeasuresTableRelationships":  0,
+                     "Relationships":  14,
+                     "ManyToMany":  0,
+                     "Bidirectional":  0,
+                     "Inactive":  0,
+                     "Pages":  1,
+                     "Visuals":  0,
+                     "Status":  "PASS"
+                 },
+    "RuntimeFailures":  [
+
+                        ]
+}

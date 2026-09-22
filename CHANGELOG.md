@@ -4,6 +4,27 @@ All notable validated analytical changes to this project are documented here.
 
 ---
 
+## Power BI Checkpoint 4 — Runtime DAX Recovery
+
+### Fixed
+
+- corrected the two Red Crescent ratio measures to direct ratio-of-totals
+  `DIVIDE(CALCULATE(...), CALCULATE(...))` expressions
+- removed the live `SYNTAXERROR` caused by the serialized multi-`VAR`
+  expressions
+- aligned runtime validation tolerance with six-decimal SQL baseline storage
+
+### Validation
+
+- active PBIP confirmed: `powerbi/SaudiHealthcareAnalytics.pbip`
+- SQL ↔ DAX runtime reconciliation: 12 / 12 PASS
+- 2021 MOH Total / Pharmacists / Non-Saudi: 131
+- relationships: 14; M:M: 0; bidirectional: 0; inactive: 0
+- `_Measures` relationships: 0; business rows: 0; placeholder hidden
+- pages: 1; visuals: 0
+
+---
+
 ## Power BI Checkpoint 3 — Governed DAX Layer
 
 ### Added
