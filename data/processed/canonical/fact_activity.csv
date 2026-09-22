@@ -1,0 +1,85 @@
+﻿Year,GeographyType,Geography,Sector,ActivityMeasure,Value,Unit,SourceGroup,SourceWorkbook,SourceSheet
+2021,Administrative Region,Al Baha,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,7902,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Al Jouf,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,7890,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Asir,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,33577,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Eastern Region,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,52092,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Hail,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,12271,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Jazan,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,16447,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Madinah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,35443,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Makkah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,130593,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Najran,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,6490,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Northern Borders,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,5338,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Qassim,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,23188,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Riyadh,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,113204,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,Administrative Region,Tabuk,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,14014,Cases,FY-018,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,7
+2021,National,Saudi Arabia,All Sectors,Admissions per 100 persons,9.1,Admissions per 100 persons,FY-023,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,26
+2021,National,Saudi Arabia,All Sectors,Encounters per person per year,4.3,Encounters per person,FY-020,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,12
+2021,National,Saudi Arabia,Ministry of Health,Encounters,61953060,Encounters,FY-020,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,12
+2021,National,Saudi Arabia,Ministry of Health,Inpatients / Admissions,1376787,Admissions,FY-023,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,26
+2021,National,Saudi Arabia,Other Governmental Sector,Encounters,21530715,Encounters,FY-020,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,12
+2021,National,Saudi Arabia,Other Governmental Sector,Inpatients / Admissions,620735,Admissions,FY-023,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,26
+2021,National,Saudi Arabia,Private Sector,Encounters,63144222.222,Encounters,FY-020,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,12
+2021,National,Saudi Arabia,Private Sector,Inpatients / Admissions,1103230,Admissions,FY-023,statistical-yearbook-2021-chapter-IV-health-activities.xlsx,26
+2022,Administrative Region,Al Baha,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,7921,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Al Jouf,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,8029,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Asir,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,32242,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Eastern Region,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,63833,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Hail,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,12638,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Jazan,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,16704,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Madinah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,48787,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Makkah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,160658,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Najran,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,6924,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Northern Borders,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,5584,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Qassim,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,26199,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Riyadh,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,128710,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,Administrative Region,Tabuk,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,16683,Cases,FY-018,2022-Chapter-IV-Health-Activities.xlsx,7
+2022,National,Saudi Arabia,All Sectors,Admissions per 100 persons,8.4,Admissions per 100 persons,FY-023,2022-Chapter-IV-Health-Activities.xlsx,25
+2022,National,Saudi Arabia,All Sectors,Encounters per person per year,5.2,Encounters per person,FY-020,2022-Chapter-IV-Health-Activities.xlsx,12
+2022,National,Saudi Arabia,Ministry of Health,Encounters,81090955,Encounters,FY-020,2022-Chapter-IV-Health-Activities.xlsx,12
+2022,National,Saudi Arabia,Ministry of Health,Inpatients / Admissions,1389950,Admissions,FY-023,2022-Chapter-IV-Health-Activities.xlsx,25
+2022,National,Saudi Arabia,Other Governmental Sector,Encounters,20356013,Encounters,FY-020,2022-Chapter-IV-Health-Activities.xlsx,12
+2022,National,Saudi Arabia,Other Governmental Sector,Inpatients / Admissions,544306,Admissions,FY-023,2022-Chapter-IV-Health-Activities.xlsx,25
+2022,National,Saudi Arabia,Private Sector,Encounters,65865130,Encounters,FY-020,2022-Chapter-IV-Health-Activities.xlsx,12
+2022,National,Saudi Arabia,Private Sector,Inpatients / Admissions,768204,Admissions,FY-023,2022-Chapter-IV-Health-Activities.xlsx,25
+2023,Administrative Region,Al Baha,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,8061,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Al Jouf,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,8311,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Asir,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,45989,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Eastern Region,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,63967,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Hail,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,12831,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Jazan,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,19115,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Madinah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,53988,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Makkah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,176675,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Najran,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,7414,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Northern Borders,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,5642,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Qassim,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,26209,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Riyadh,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,134740,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,Administrative Region,Tabuk,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,18015,Cases,FY-018,Statistical-Yearbook-2023.xlsx,7..
+2023,National,Saudi Arabia,All Sectors,Admissions per 100 persons,11.3,Admissions per 100 persons,FY-023,Statistical-Yearbook-2023.xlsx,25.
+2023,National,Saudi Arabia,All Sectors,Encounters per person per year,5.1,Encounters per person,FY-020,Statistical-Yearbook-2023.xlsx,12..
+2023,National,Saudi Arabia,Ministry of Health,Encounters,79835065,Encounters,FY-020,Statistical-Yearbook-2023.xlsx,12..
+2023,National,Saudi Arabia,Ministry of Health,Inpatients / Admissions,1418237,Admissions,FY-023,Statistical-Yearbook-2023.xlsx,25.
+2023,National,Saudi Arabia,Other Governmental Sector,Encounters,27197177,Encounters,FY-020,Statistical-Yearbook-2023.xlsx,12..
+2023,National,Saudi Arabia,Other Governmental Sector,Inpatients / Admissions,629879,Admissions,FY-023,Statistical-Yearbook-2023.xlsx,25.
+2023,National,Saudi Arabia,Private Sector,Encounters,64560723,Encounters,FY-020,Statistical-Yearbook-2023.xlsx,12..
+2023,National,Saudi Arabia,Private Sector,Inpatients / Admissions,1783708,Admissions,FY-023,Statistical-Yearbook-2023.xlsx,25.
+2024,Administrative Region,Al Baha,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,8578,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Al Jouf,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,7905,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Asir,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,39241,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Eastern Region,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,65447,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Hail,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,13723,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Jazan,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,21955,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Madinah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,56794,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Makkah,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,171937,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Najran,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,8105,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Northern Borders,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,5971,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Qassim,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,28388,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Riyadh,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,117881,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,Administrative Region,Tabuk,Saudi Red Crescent Authority,Cases offered first aid / transported to hospitals,20363,Cases,FY-018,Statistical-Yearbook-2024.xlsx,4-8
+2024,National,Saudi Arabia,All Sectors,Admissions per 100 persons,10.3,Admissions per 100 persons,FY-023,Statistical-Yearbook-2024.xlsx,4-31
+2024,National,Saudi Arabia,All Sectors,Encounters per person per year,4.8,Encounters per person,FY-020,Statistical-Yearbook-2024.xlsx,4-15
+2024,National,Saudi Arabia,Ministry of Health,Encounters,74079461,Encounters,FY-020,Statistical-Yearbook-2024.xlsx,4-15
+2024,National,Saudi Arabia,Ministry of Health,Inpatients / Admissions,1876723,Admissions,FY-023,Statistical-Yearbook-2024.xlsx,4-31
+2024,National,Saudi Arabia,Other Governmental Sector,Encounters,24872682,Encounters,FY-020,Statistical-Yearbook-2024.xlsx,4-15
+2024,National,Saudi Arabia,Other Governmental Sector,Inpatients / Admissions,671669,Admissions,FY-023,Statistical-Yearbook-2024.xlsx,4-31
+2024,National,Saudi Arabia,Private Sector,Encounters,71279161,Encounters,FY-020,Statistical-Yearbook-2024.xlsx,4-15
+2024,National,Saudi Arabia,Private Sector,Inpatients / Admissions,1081942,Admissions,FY-023,Statistical-Yearbook-2024.xlsx,4-31
