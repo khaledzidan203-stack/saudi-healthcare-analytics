@@ -347,6 +347,55 @@ def get_ws(source):
     )
 
 
+REFERENCE_RE = re.compile(
+    r"(?:'([^']+)'|([A-Za-z0-9 _-]+))!([$]?[A-Z]{1,3}[$]?\d+)"
+)
+
+
+def resolve_simple_formula(ws_formula, ws_value, formula):
+    """Resolve only the supported additive source-reference pattern."""
+
+    if not isinstance(formula, str) or not formula.startswith("="):
+        return None
+
+    expression = formula[1:].strip()
+    terms = [term.strip() for term in expression.split("+")]
+
+    if len(terms) < 2:
+        return None
+
+    values = []
+
+    for term in terms:
+        match = REFERENCE_RE.fullmatch(term)
+
+        if not match:
+            return None
+
+        sheet_name = match.group(1) or match.group(2)
+        sheet_name = re.sub(r"^\[[^]]+\]", "", sheet_name).strip()
+        coordinate = match.group(3).replace("$", "")
+
+        if sheet_name not in ws_formula.parent.sheetnames:
+            return None
+
+        referenced_formula = ws_formula.parent[sheet_name][coordinate].value
+        referenced_value = ws_value.parent[sheet_name][coordinate].value
+
+        number = to_number(referenced_formula)
+
+        if number is None:
+            number = to_number(referenced_value)
+
+        if number is None:
+            return None
+
+        values.append(number)
+
+    result = sum(values)
+    return int(result) if float(result).is_integer() else result
+
+
 def source_number(ws_formula, ws_value, row, column):
     """
     Extract a numeric source value safely.
@@ -370,7 +419,14 @@ def source_number(ws_formula, ws_value, row, column):
 
     cached_number = to_number(cached_value)
 
-    return cached_number
+    if cached_number is not None:
+        return cached_number
+
+    return resolve_simple_formula(
+        ws_formula,
+        ws_value,
+        formula_value
+    )
 
 
 # ============================================================
@@ -691,6 +747,10 @@ def parse_nationality_group(
 
         if mapped_workforce:
             current_workforce = mapped_workforce
+        elif raw_category:
+            # Non-empty aggregate/total labels terminate the preceding
+            # leaf category. Never inherit a leaf into an aggregate block.
+            current_workforce = None
 
         raw_nationality = clean(
             ws.cell(r, 2).value

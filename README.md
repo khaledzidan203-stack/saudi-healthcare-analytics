@@ -19,7 +19,7 @@ activities across Saudi Arabia from 2021 to 2024.
 
 ## Project Status
 
-Current Phase: Data Discovery
+Current Phase: SQL Foundation / Star Schema
 
 ## Data Source
 

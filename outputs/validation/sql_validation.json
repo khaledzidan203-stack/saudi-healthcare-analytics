@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "engine": "SQLite 3.50.4",
+  "checks": [
+    {
+      "name": "fact_capacity_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 132,
+        "actual": 132
+      }
+    },
+    {
+      "name": "fact_activity_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 84,
+        "actual": 84
+      }
+    },
+    {
+      "name": "fact_workforce_sector_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 72,
+        "actual": 72
+      }
+    },
+    {
+      "name": "fact_workforce_nationality_row_count",
+      "status": "PASS",
+      "details": {
+        "expected": 96,
+        "actual": 96
+      }
+    },
+    {
+      "name": "broken_foreign_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "fact_capacity_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "fact_capacity_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "fact_activity_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "fact_activity_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "fact_workforce_sector_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "fact_workforce_sector_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "fact_workforce_nationality_duplicate_business_keys",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "fact_workforce_nationality_year_coverage",
+      "status": "PASS",
+      "details": 4
+    },
+    {
+      "name": "capacity_join_preserves_rows",
+      "status": "PASS",
+      "details": 132
+    },
+    {
+      "name": "fy006_fy008_reconciliation",
+      "status": "PASS",
+      "details": 0
+    }
+  ]
+}

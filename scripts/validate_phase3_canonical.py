@@ -1,6 +1,9 @@
 ﻿from pathlib import Path
 import csv
+import json
 import sys
+from collections import defaultdict
+from math import isclose
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +30,20 @@ def read_csv(filename):
 
 
 errors = []
+validation_output = {
+    "status": "PASS",
+    "checks": []
+}
+
+
+def check(name, passed, details):
+    validation_output["checks"].append({
+        "name": name,
+        "status": "PASS" if passed else "FAIL",
+        "details": details
+    })
+    if not passed:
+        errors.append(details)
 
 
 # ============================================================
@@ -44,10 +61,8 @@ if len(rows) == expected_rows:
         "PASS: fact_workforce_nationality = 96 rows"
     )
 else:
-    errors.append(
-        f"Expected 96 workforce nationality rows; "
-        f"found {len(rows)}"
-    )
+    check("fact_workforce_nationality_row_count", False,
+          f"Expected 96 workforce nationality rows; found {len(rows)}")
 
 
 years = [
@@ -116,9 +131,7 @@ if not missing:
         "PASS: workforce nationality matrix complete"
     )
 else:
-    errors.append(
-        f"Missing grain rows: {missing}"
-    )
+    check("workforce_nationality_matrix", False, f"Missing grain rows: {missing}")
 
 
 if not unexpected:
@@ -126,9 +139,7 @@ if not unexpected:
         "PASS: no unexpected workforce nationality grain rows"
     )
 else:
-    errors.append(
-        f"Unexpected grain rows: {unexpected}"
-    )
+    check("workforce_nationality_unexpected_grain", False, f"Unexpected grain rows: {unexpected}")
 
 
 # ============================================================
@@ -149,10 +160,7 @@ target = [
 
 if len(target) != 1:
 
-    errors.append(
-        "Expected exactly one 2021 MOH Total / "
-        "Pharmacists / Non-Saudi row."
-    )
+    check("fy008_regression_row", False, "Expected exactly one 2021 MOH Total / Pharmacists / Non-Saudi row.")
 
 else:
 
@@ -166,10 +174,7 @@ else:
     )
 
     if value != 131:
-        errors.append(
-            "Regression value expected 131; "
-            f"found {value:g}"
-        )
+        check("fy008_regression_value", False, f"Regression value expected 131; found {value:g}")
     else:
         print(
             "PASS: regression value = 131"
@@ -201,9 +206,7 @@ if duplicates == 0:
         "PASS: workforce nationality duplicate grain = 0"
     )
 else:
-    errors.append(
-        f"Duplicate workforce nationality grain = {duplicates}"
-    )
+    check("workforce_nationality_duplicate_grain", False, f"Duplicate workforce nationality grain = {duplicates}")
 
 
 # ============================================================
@@ -241,6 +244,11 @@ fact_tests = [
             "Sector",
             "WorkforceType",
         ],
+        "WorkforceCount",
+    ),
+    (
+        "fact_workforce_nationality.csv",
+        ["Year", "GeographyType", "Geography", "Scope", "WorkforceType", "Nationality"],
         "WorkforceCount",
     ),
 ]
@@ -282,10 +290,7 @@ for filename, grain, measure in fact_tests:
             f"PASS: {filename} duplicate grain = 0"
         )
     else:
-        errors.append(
-            f"{filename} duplicate grain = "
-            f"{duplicate_count}"
-        )
+        check(f"{filename}_duplicate_grain", False, f"{filename} duplicate grain = {duplicate_count}")
 
 
     if missing_measure == 0:
@@ -293,10 +298,7 @@ for filename, grain, measure in fact_tests:
             f"PASS: {filename} missing primary measures = 0"
         )
     else:
-        errors.append(
-            f"{filename} missing primary measures = "
-            f"{missing_measure}"
-        )
+        check(f"{filename}_null_primary_measure", False, f"{filename} missing primary measures = {missing_measure}")
 
 
     if fact_years == years:
@@ -304,9 +306,47 @@ for filename, grain, measure in fact_tests:
             f"PASS: {filename} year coverage = 2021-2024"
         )
     else:
-        errors.append(
-            f"{filename} year coverage = {fact_years}"
-        )
+        check(f"{filename}_year_coverage", False, f"{filename} year coverage = {fact_years}")
+
+
+# ============================================================
+# FY-006 ↔ FY-008 INDEPENDENT RECONCILIATION
+# ============================================================
+
+sector_rows = read_csv("fact_workforce_sector.csv")
+sector_moh = {
+    (row["Year"], row["WorkforceType"]): row
+    for row in sector_rows
+    if row["Sector"] == "Ministry of Health"
+}
+
+nationality_totals = defaultdict(lambda: {"Saudi": 0.0, "Non-Saudi": 0.0})
+for row in rows:
+    if row["Scope"] == "MOH Total":
+        nationality_totals[(row["Year"], row["WorkforceType"])][row["Nationality"]] += float(row["WorkforceCount"])
+
+reconciliation_failures = []
+for key, source in sector_moh.items():
+    saudi = nationality_totals[key]["Saudi"]
+    non_saudi = nationality_totals[key]["Non-Saudi"]
+    total = saudi + non_saudi
+    workforce = float(source["WorkforceCount"])
+    published_percent = float(source["SaudiPercent"])
+    calculated_percent = saudi / total * 100 if total else None
+    if workforce != total or calculated_percent is None or abs(published_percent - calculated_percent) > 0.15:
+        reconciliation_failures.append({
+            "Year": key[0], "WorkforceType": key[1],
+            "FY006": workforce, "FY008": total,
+            "PublishedSaudiPercent": published_percent,
+            "CalculatedSaudiPercent": calculated_percent,
+        })
+
+if len(sector_moh) != 24:
+    check("fy006_fy008_reconciliation_row_count", False, f"Expected 24 reconciliation rows; found {len(sector_moh)}")
+elif reconciliation_failures:
+    check("fy006_fy008_reconciliation", False, f"Reconciliation failures: {reconciliation_failures}")
+else:
+    print("PASS: FY006↔FY008 workforce reconciliation = 24 / 24")
 
 
 # ============================================================
@@ -319,6 +359,8 @@ print(
 )
 
 if errors:
+
+    validation_output["status"] = "FAIL"
 
     print(
         f"FAIL: {len(errors)} PHASE 3 VALIDATION ISSUE(S)"
@@ -338,6 +380,10 @@ if errors:
 
 print(
     "PASS: PHASE 3 CANONICAL DATASET VALIDATED"
+)
+validation_output["status"] = "PASS"
+(ROOT / "outputs" / "validation" / "phase3_independent_validation.json").write_text(
+    json.dumps(validation_output, indent=2), encoding="utf-8"
 )
 print(
     "============================================================"

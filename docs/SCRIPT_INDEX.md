@@ -151,6 +151,8 @@ Build the current canonical analytical datasets from approved core source groups
 - Health Region, Administrative Region and Health Cluster are not assumed equivalent
 - missing values are not converted to zero
 - Excel formula cells can use cached calculated values
+- supported additive source-reference formulas are resolved only when the
+  cached value is unavailable
 - canonical grain is explicitly validated
 - source lineage is retained
 
@@ -257,3 +259,12 @@ Expected workforce nationality grain:
 `4 years × 2 scopes × 6 workforce types × 2 nationalities = 96 rows`
 
 Superseded `08_build_canonical_dataset.py` is removed from the active codebase.
+
+## SQL and analytical preparation
+
+- `scripts/build_sqlite_model.py` — load validated canonical CSVs into the
+  SQLite star schema.
+- `scripts/validate_sqlite_model.py` — reconcile SQL row counts, keys, foreign
+  keys, joins, and workforce totals.
+- `scripts/build_eda_outputs.py` — produce reusable national and regional
+  analytical tables without pandas.

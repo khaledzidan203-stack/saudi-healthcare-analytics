@@ -4,11 +4,11 @@
 
 Current validated stage:
 
-**Phase 3 — Canonical Dataset Validated**
+**Phase 3 — Canonical Dataset Validated; SQL Foundation Next**
 
 Next planned stage:
 
-**SQL Foundation / Star Schema**
+**SQL Environment Discovery and Star Schema**
 
 ---
 
@@ -125,9 +125,7 @@ See:
 
 ## Next Gate
 
-Validate the final canonical outputs and reconciliation.
-
-After PASS:
-
-**Phase 4 — SQL Foundation & Star Schema**
+Phase 3 passed. The SQL star schema, SQL validation, KPI contracts, EDA
+outputs, and Power BI handoff package are now prepared. Power BI implementation
+is the next user-owned step.
 

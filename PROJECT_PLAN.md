@@ -11,7 +11,7 @@ using official Saudi Ministry of Health data.
 
 ## Current Phase
 
-Phase 1 — Data Discovery
+Phase 4 — SQL Foundation / Star Schema
 
 ## Planned Phases
 

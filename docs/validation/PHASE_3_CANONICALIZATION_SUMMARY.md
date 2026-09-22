@@ -5,15 +5,15 @@
 - `fact_capacity`: **132 rows**, 4 years, source groups: FY-005 | FY-018
 - `fact_activity`: **84 rows**, 4 years, source groups: FY-018 | FY-020 | FY-023
 - `fact_workforce_sector`: **72 rows**, 4 years, source groups: FY-006
-- `fact_workforce_nationality`: **95 rows**, 4 years, source groups: FY-008 | FY-010
+- `fact_workforce_nationality`: **96 rows**, 4 years, source groups: FY-008 | FY-010
 
 ## Validation
 
-- Validation checks: **51**
-- Failed checks: **35**
+- Validation checks: **17**
+- Failed checks: **0**
 - Review checks: **0**
 - Workforce cross-source reconciliations: **24**
-- Workforce reconciliation failures: **1**
+- Workforce reconciliation failures: **0**
 
 ## Source Protection
 

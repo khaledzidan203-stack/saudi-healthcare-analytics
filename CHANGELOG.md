@@ -4,6 +4,28 @@ All notable validated analytical changes to this project are documented here.
 
 ---
 
+## Phase 3 — Canonical Validation Repair
+
+### Fixed
+
+- restored the 2021 FY-008 Pharmacists / Non-Saudi row from its cached source
+  value of 131
+- prevented aggregate workforce labels from inheriting the preceding leaf
+  workforce type
+- added conservative additive source-reference fallback handling
+- added independent machine-readable Phase 3 validation and Saudi-percent
+  reconciliation
+
+### Validation
+
+- `fact_capacity`: 132 rows
+- `fact_activity`: 84 rows
+- `fact_workforce_sector`: 72 rows
+- `fact_workforce_nationality`: 96 rows
+- FY-006 ↔ FY-008 reconciliation: 24 / 24 passed
+
+---
+
 ## Phase 3 — Canonical Dataset
 
 ### Added
