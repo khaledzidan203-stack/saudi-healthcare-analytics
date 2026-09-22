@@ -4,6 +4,21 @@ All notable validated analytical changes to this project are documented here.
 
 ---
 
+## Power BI Checkpoint 1 — Baseline Discovery
+
+### Documented
+
+- inspected the user-created PBIP/PBIR/TMDL structure read-only
+- confirmed nine visible SQL Server business tables and 14 star-schema
+  relationships
+- confirmed no measures, visuals, hidden tables, Auto Date/Time tables,
+  many-to-many, bidirectional, inactive, or fact-to-fact relationships
+- recorded summarization and technical-key hardening risks
+
+Power BI artifacts were not modified.
+
+---
+
 ## SQL Server Analytical Foundation
 
 ### Added

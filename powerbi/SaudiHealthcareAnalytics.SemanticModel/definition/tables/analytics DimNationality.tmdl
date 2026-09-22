@@ -1,0 +1,32 @@
+table 'analytics DimNationality'
+	lineageTag: 702192db-799b-4601-b784-50cac5c76cb2
+
+	column NationalityKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 6190fe7b-03bc-4db8-8197-fbaf76882859
+		summarizeBy: none
+		sourceColumn: NationalityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column NationalityName
+		dataType: string
+		lineageTag: e848713f-2036-461c-aa8e-fce4c25fca9f
+		summarizeBy: none
+		sourceColumn: NationalityName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics DimNationality' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_DimNationality = Source{[Schema="analytics",Item="DimNationality"]}[Data]
+				in
+				    analytics_DimNationality
+
+	annotation PBI_ResultType = Table
+

@@ -129,3 +129,7 @@ The SQL Server analytical star schema, SQL validation, KPI contracts, EDA
 outputs, and Power BI handoff package are prepared. Power BI implementation is
 the next user-owned step.
 
+The read-only PBIP baseline discovery is documented in
+`docs/powerbi/POWER_BI_BASELINE.md` and passed. The next checkpoint is semantic
+model hardening only; measures and DAX remain out of scope.
+

@@ -1,0 +1,107 @@
+table 'analytics FactCapacity'
+	lineageTag: d6158c50-486a-400c-825a-bd3f8da6518e
+
+	column CapacityKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: fb2f50d5-a3c3-4693-a3e6-be04058a0b56
+		summarizeBy: count
+		sourceColumn: CapacityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: f8b87e41-cd72-4ade-bd7a-701bdd7eb3e9
+		summarizeBy: none
+		sourceColumn: YearKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 926d0007-edab-40bc-a756-42817e53ada6
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectorKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 372cd228-9450-4410-b4b7-ea89df31d631
+		summarizeBy: none
+		sourceColumn: SectorKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CapacityMeasure
+		dataType: string
+		lineageTag: 686fe606-fb01-47dd-a556-a5b844005007
+		summarizeBy: none
+		sourceColumn: CapacityMeasure
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 280bb9d8-3adf-4fd9-b76a-5e3adf0e619f
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit
+		dataType: string
+		lineageTag: 429defcd-d48d-453f-b9bb-213975a2a970
+		summarizeBy: none
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceGroup
+		isHidden
+		dataType: string
+		lineageTag: ac81f85b-7c17-455b-be4f-21483f428422
+		summarizeBy: none
+		sourceColumn: SourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceWorkbook
+		isHidden
+		dataType: string
+		lineageTag: ce5de5f6-74c4-4daf-a32e-bc1f4023a9b5
+		summarizeBy: none
+		sourceColumn: SourceWorkbook
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSheet
+		isHidden
+		dataType: string
+		lineageTag: e9b54b32-5cc4-4b7e-8e38-5f0cecfbae60
+		summarizeBy: none
+		sourceColumn: SourceSheet
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics FactCapacity' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_FactCapacity = Source{[Schema="analytics",Item="FactCapacity"]}[Data]
+				in
+				    analytics_FactCapacity
+
+	annotation PBI_ResultType = Table
+

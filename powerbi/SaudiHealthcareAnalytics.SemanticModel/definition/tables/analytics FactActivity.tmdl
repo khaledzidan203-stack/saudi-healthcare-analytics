@@ -1,0 +1,107 @@
+table 'analytics FactActivity'
+	lineageTag: d30aaa6e-d2af-47e9-997d-564b597e7533
+
+	column ActivityKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ca13b0d-94f7-42f8-a6fc-37dfa357fe4e
+		summarizeBy: count
+		sourceColumn: ActivityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: d3739a21-2ffa-46aa-b85e-a95e59e2044a
+		summarizeBy: none
+		sourceColumn: YearKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a3728f2-e3c8-4202-b8fe-75e7c7dfbab2
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectorKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 8bd8525f-8d03-443e-b83a-b2f096930840
+		summarizeBy: none
+		sourceColumn: SectorKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActivityMeasure
+		dataType: string
+		lineageTag: 149ab11e-dceb-4a2d-957f-4fd2d1d166d2
+		summarizeBy: none
+		sourceColumn: ActivityMeasure
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 20018835-ad69-493b-9a7d-8cbc8e46b465
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit
+		dataType: string
+		lineageTag: 193dad6d-e542-4243-9a2d-0040b31adbe9
+		summarizeBy: none
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceGroup
+		isHidden
+		dataType: string
+		lineageTag: d5ad9386-ee77-4997-a09f-5ec3e7cbb930
+		summarizeBy: none
+		sourceColumn: SourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceWorkbook
+		isHidden
+		dataType: string
+		lineageTag: cc986c60-5a4e-462a-9544-587caafac749
+		summarizeBy: none
+		sourceColumn: SourceWorkbook
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSheet
+		isHidden
+		dataType: string
+		lineageTag: 46844815-f2b2-425e-98d9-392090c9b72b
+		summarizeBy: none
+		sourceColumn: SourceSheet
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics FactActivity' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_FactActivity = Source{[Schema="analytics",Item="FactActivity"]}[Data]
+				in
+				    analytics_FactActivity
+
+	annotation PBI_ResultType = Table
+

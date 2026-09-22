@@ -1,0 +1,40 @@
+table 'analytics DimGeography'
+	lineageTag: 73f2dae3-7a3c-4e0b-b9da-0d8e8b7f5df7
+
+	column GeographyKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 0104459f-1747-44c6-b8fd-80579edad909
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyType
+		dataType: string
+		lineageTag: 43db7a5d-33d3-4f70-80c3-18ae53e63b27
+		summarizeBy: none
+		sourceColumn: GeographyType
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyName
+		dataType: string
+		lineageTag: 14b6fe9e-b8e3-4d92-b0fc-02ab9101172b
+		summarizeBy: none
+		sourceColumn: GeographyName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics DimGeography' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_DimGeography = Source{[Schema="analytics",Item="DimGeography"]}[Data]
+				in
+				    analytics_DimGeography
+
+	annotation PBI_ResultType = Table
+

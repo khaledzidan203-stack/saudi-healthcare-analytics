@@ -1,0 +1,118 @@
+table 'analytics FactWorkforceSector'
+	lineageTag: 2940e822-4bc7-40d1-bc9e-2095a7bc3a65
+
+	column WorkforceSectorKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 37b57b76-851a-4ce8-8285-c04cf08a4d6e
+		summarizeBy: count
+		sourceColumn: WorkforceSectorKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: bb508cd8-ee17-416b-9d94-1af75591b0d6
+		summarizeBy: none
+		sourceColumn: YearKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: f71b7ffc-006c-43f2-97ec-b38cd7fe3a02
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectorKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: eb1d607a-c929-4313-92a3-e4fd583335db
+		summarizeBy: none
+		sourceColumn: SectorKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkforceTypeKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: ef128c9e-e622-4ef4-9e86-ccda0f18bcb5
+		summarizeBy: none
+		sourceColumn: WorkforceTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkforceCount
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b3f49f6-e871-447a-802b-eecea1d919ab
+		summarizeBy: sum
+		sourceColumn: WorkforceCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column SaudiPercent
+		dataType: double
+		lineageTag: 4ca12693-8de1-43d1-8cfd-b71a0e188564
+		summarizeBy: none
+		sourceColumn: SaudiPercent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit
+		dataType: string
+		lineageTag: fb5221fd-86c9-4ab2-b8cf-f3c98a6a2dd7
+		summarizeBy: none
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceGroup
+		isHidden
+		dataType: string
+		lineageTag: 10112167-08ed-4579-ad3f-65fcc80eb3dc
+		summarizeBy: none
+		sourceColumn: SourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceWorkbook
+		isHidden
+		dataType: string
+		lineageTag: 934af8d2-9ae5-4cd2-9a62-5def651b6b58
+		summarizeBy: none
+		sourceColumn: SourceWorkbook
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSheet
+		isHidden
+		dataType: string
+		lineageTag: 79f903ab-caaf-4b89-9d85-a2eb2ca73832
+		summarizeBy: none
+		sourceColumn: SourceSheet
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics FactWorkforceSector' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_FactWorkforceSector = Source{[Schema="analytics",Item="FactWorkforceSector"]}[Data]
+				in
+				    analytics_FactWorkforceSector
+
+	annotation PBI_ResultType = Table
+

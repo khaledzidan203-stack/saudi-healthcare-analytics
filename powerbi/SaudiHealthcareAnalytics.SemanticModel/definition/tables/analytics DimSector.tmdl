@@ -1,0 +1,32 @@
+table 'analytics DimSector'
+	lineageTag: 5b996c9e-7ba7-4435-a84d-df6730ad7d37
+
+	column SectorKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ab981b2-0e61-45dd-b388-d114e107f82f
+		summarizeBy: none
+		sourceColumn: SectorKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SectorName
+		dataType: string
+		lineageTag: 1b99d2ab-2159-40e7-afab-12f9710a2405
+		summarizeBy: none
+		sourceColumn: SectorName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics DimSector' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_DimSector = Source{[Schema="analytics",Item="DimSector"]}[Data]
+				in
+				    analytics_DimSector
+
+	annotation PBI_ResultType = Table
+

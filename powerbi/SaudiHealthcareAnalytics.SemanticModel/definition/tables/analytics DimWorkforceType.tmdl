@@ -1,0 +1,32 @@
+table 'analytics DimWorkforceType'
+	lineageTag: b6ed6e63-e807-4ea2-9eec-05e1f44a0bec
+
+	column WorkforceTypeKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: fe75d8c3-34fb-4860-85d8-4db8f7fa12c8
+		summarizeBy: none
+		sourceColumn: WorkforceTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkforceTypeName
+		dataType: string
+		lineageTag: 1ef29399-ac1d-4647-81b4-3a769fc478c9
+		summarizeBy: none
+		sourceColumn: WorkforceTypeName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics DimWorkforceType' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_DimWorkforceType = Source{[Schema="analytics",Item="DimWorkforceType"]}[Data]
+				in
+				    analytics_DimWorkforceType
+
+	annotation PBI_ResultType = Table
+

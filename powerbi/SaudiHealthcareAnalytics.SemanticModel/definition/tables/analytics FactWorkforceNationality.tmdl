@@ -1,0 +1,116 @@
+table 'analytics FactWorkforceNationality'
+	lineageTag: 485a951d-bc39-4b2e-b5bc-ac8fb3309ffb
+
+	column WorkforceNationalityKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f10be0a-a6ea-44fc-a9aa-f9fa47e5a92a
+		summarizeBy: count
+		sourceColumn: WorkforceNationalityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: df224930-444e-42ad-87b8-85a73140930c
+		summarizeBy: none
+		sourceColumn: YearKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 0602714d-9354-4b41-832b-c5ea1267c133
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Scope
+		dataType: string
+		lineageTag: 6a271e73-9399-4d11-82fc-7f94d11e8540
+		summarizeBy: none
+		sourceColumn: Scope
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkforceTypeKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: ad92071b-3bd7-4e5a-90a3-801837304097
+		summarizeBy: none
+		sourceColumn: WorkforceTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column NationalityKey
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 70c6c99f-4b73-4a61-a64b-95aa3cb17df9
+		summarizeBy: none
+		sourceColumn: NationalityKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkforceCount
+		dataType: int64
+		formatString: 0
+		lineageTag: b5ab7057-8694-4553-b43c-a127a1860b4d
+		summarizeBy: sum
+		sourceColumn: WorkforceCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit
+		dataType: string
+		lineageTag: 2090bca9-fc0d-45a9-a257-8c4beddab8a2
+		summarizeBy: none
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceGroup
+		isHidden
+		dataType: string
+		lineageTag: 30444615-adf4-4f1d-bdc5-45e816ddb153
+		summarizeBy: none
+		sourceColumn: SourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceWorkbook
+		isHidden
+		dataType: string
+		lineageTag: 3fad48a0-bfc0-4620-8059-f8ddcd91d2d6
+		summarizeBy: none
+		sourceColumn: SourceWorkbook
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSheet
+		isHidden
+		dataType: string
+		lineageTag: f18006d6-7399-493e-bdb2-d0db95c5140a
+		summarizeBy: none
+		sourceColumn: SourceSheet
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'analytics FactWorkforceNationality' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost", "SaudiHealthcareAnalytics"),
+				    analytics_FactWorkforceNationality = Source{[Schema="analytics",Item="FactWorkforceNationality"]}[Data]
+				in
+				    analytics_FactWorkforceNationality
+
+	annotation PBI_ResultType = Table
+
