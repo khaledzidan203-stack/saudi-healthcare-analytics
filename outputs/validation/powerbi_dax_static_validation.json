@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "runtime_status": "PENDING",
+  "tmdl_parser": "Tabular Editor 2.28.0 loaded 10 tables, 12 measures, 14 relationships",
+  "checks": [
+    {
+      "name": "table_count",
+      "status": "PASS",
+      "details": 10
+    },
+    {
+      "name": "measures_table_exists",
+      "status": "PASS",
+      "details": "D:\\Saudi_Healthcare_Analytics_Raw_Data\\powerbi\\SaudiHealthcareAnalytics.SemanticModel\\definition\\tables\\_Measures.tmdl"
+    },
+    {
+      "name": "measures_table_referenced",
+      "status": "PASS",
+      "details": "ref table _Measures"
+    },
+    {
+      "name": "measure_count",
+      "status": "PASS",
+      "details": 12
+    },
+    {
+      "name": "measures_outside_measures_table",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "zero_row_hidden_placeholder",
+      "status": "PASS",
+      "details": "FILTER(ROW(...), FALSE())"
+    },
+    {
+      "name": "measures_relationships",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "relationship_count",
+      "status": "PASS",
+      "details": 14
+    },
+    {
+      "name": "many_to_one_count",
+      "status": "PASS",
+      "details": 14
+    },
+    {
+      "name": "single_direction_count",
+      "status": "PASS",
+      "details": 14
+    },
+    {
+      "name": "active_relationship_count",
+      "status": "PASS",
+      "details": 14
+    },
+    {
+      "name": "page_count",
+      "status": "PASS",
+      "details": 1
+    },
+    {
+      "name": "visual_count",
+      "status": "PASS",
+      "details": 0
+    },
+    {
+      "name": "sql_source_unchanged",
+      "status": "PASS",
+      "details": 9
+    },
+    {
+      "name": "no_calculated_business_columns",
+      "status": "PASS",
+      "details": 1
+    },
+    {
+      "name": "auto_date_disabled",
+      "status": "PASS",
+      "details": true
+    }
+  ]
+}

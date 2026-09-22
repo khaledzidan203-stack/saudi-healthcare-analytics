@@ -1,0 +1,74 @@
+table _Measures
+	lineageTag: f60e2f16-48b6-4928-bbd8-3ff3763924b4
+
+	measure Hospitals = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Hospitals"))
+		formatString: #,0
+		displayFolder: 01 Capacity
+		lineageTag: e6a562d4-1c52-4281-af06-5cdb945ad6fd
+
+	measure Beds = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Beds"))
+		formatString: #,0
+		displayFolder: 01 Capacity
+		lineageTag: 42f433b3-76be-4fcd-8b7a-e80d38aae818
+
+	measure 'Beds per 10,000 Population' = CALCULATE(SELECTEDVALUE('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Beds per 10,000 population"))
+		formatString: 0.00
+		displayFolder: 01 Capacity
+		lineageTag: 1dfe44db-05e4-4ff6-bbf3-2fbee62570fa
+
+	measure 'Workforce Count' = SUM('analytics FactWorkforceSector'[WorkforceCount])
+		formatString: #,0
+		displayFolder: 03 Workforce
+		lineageTag: 8fab66db-44c1-46ff-bb56-31db3ea42a5b
+
+	measure 'Saudi Workforce Share' = VAR SaudiCount = CALCULATE(CALCULATE(SUM('analytics FactWorkforceNationality'[WorkforceCount]), 'analytics DimNationality'[NationalityName] = "Saudi"), 'analytics FactWorkforceNationality'[Scope] = "MOH Total", REMOVEFILTERS('analytics DimNationality')) VAR TotalCount = CALCULATE(SUM('analytics FactWorkforceNationality'[WorkforceCount]), 'analytics FactWorkforceNationality'[Scope] = "MOH Total", REMOVEFILTERS('analytics DimNationality')) RETURN DIVIDE(SaudiCount, TotalCount)
+		formatString: 0.0%
+		displayFolder: 04 Nationalization
+		lineageTag: 68a2e503-fb3b-4c63-adc5-2ad7a3cd801a
+
+	measure Encounters = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Encounters"))
+		formatString: #,0
+		displayFolder: 02 Activity
+		lineageTag: f0f72425-c959-4453-9ab4-756ac792c0da
+
+	measure 'Encounters per Person' = CALCULATE(SELECTEDVALUE('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Encounters per person per year"))
+		formatString: 0.00
+		displayFolder: 02 Activity
+		lineageTag: e1cbfa86-795b-4867-b514-f9ef604b3bc7
+
+	measure Admissions = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Inpatients / Admissions"))
+		formatString: #,0
+		displayFolder: 02 Activity
+		lineageTag: 8e907fe6-b39f-4120-9875-8a537d889313
+
+	measure 'Admissions per 100 Persons' = CALCULATE(SELECTEDVALUE('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Admissions per 100 persons"))
+		formatString: 0.00
+		displayFolder: 02 Activity
+		lineageTag: bbfcbe46-e142-45b3-ab3c-8a17df36fc8b
+
+	measure 'Red Crescent Cases' = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals"))
+		formatString: #,0
+		displayFolder: 05 Red Crescent / Regional
+		lineageTag: 6a730861-4fc1-4454-b19e-c84dc1ed1249
+
+	measure 'Cases per Center' = VAR Cases = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")) VAR Centers = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "First Aid Centers")) RETURN DIVIDE(Cases, Centers)
+		formatString: #,0.0
+		displayFolder: 05 Red Crescent / Regional
+		lineageTag: 6ef55b32-0e57-4f7e-9a80-529327d8dd60
+
+	measure 'Cases per Ambulance' = VAR Cases = CALCULATE(SUM('analytics FactActivity'[Value]), KEEPFILTERS('analytics FactActivity'[ActivityMeasure] = "Cases offered first aid / transported to hospitals")) VAR Ambulances = CALCULATE(SUM('analytics FactCapacity'[Value]), KEEPFILTERS('analytics FactCapacity'[CapacityMeasure] = "Ambulances")) RETURN DIVIDE(Cases, Ambulances)
+		formatString: #,0.0
+		displayFolder: 05 Red Crescent / Regional
+		lineageTag: 2d3fc681-2118-4b13-ae9a-0dde60a1e04c
+
+	column Placeholder
+		isHidden
+		dataType: int64
+		formatString: 0
+		lineageTag: 213404e4-0e4c-4e24-b402-2905fbad84f9
+		summarizeBy: none
+		sourceColumn: [Placeholder]
+
+	partition _Measures = calculated
+		mode: import
+		source = FILTER(ROW("Placeholder", 0), FALSE())

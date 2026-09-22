@@ -1,0 +1,528 @@
+{
+  "status": "PASS",
+  "server": "localhost",
+  "database": "SaudiHealthcareAnalytics",
+  "kpis_tested": 12,
+  "runtime_status": "PENDING",
+  "results": [
+    {
+      "kpi": "KPI-01 Hospitals",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 497.0
+        },
+        {
+          "Year": 2022,
+          "Value": 493.0
+        },
+        {
+          "Year": 2023,
+          "Value": 499.0
+        },
+        {
+          "Year": 2024,
+          "Value": 516.0
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 497.0
+        },
+        {
+          "Year": 2022,
+          "Value": 493.0
+        },
+        {
+          "Year": 2023,
+          "Value": 499.0
+        },
+        {
+          "Year": 2024,
+          "Value": 516.0
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-02 Beds",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 77224.0
+        },
+        {
+          "Year": 2022,
+          "Value": 78440.0
+        },
+        {
+          "Year": 2023,
+          "Value": 80072.0
+        },
+        {
+          "Year": 2024,
+          "Value": 82721.0
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 77224.0
+        },
+        {
+          "Year": 2022,
+          "Value": 78440.0
+        },
+        {
+          "Year": 2023,
+          "Value": 80072.0
+        },
+        {
+          "Year": 2024,
+          "Value": 82721.0
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-03 Beds per 10,000 Population",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 22.6
+        },
+        {
+          "Year": 2022,
+          "Value": 24.3
+        },
+        {
+          "Year": 2023,
+          "Value": 23.7
+        },
+        {
+          "Year": 2024,
+          "Value": 23.433525173171432
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 22.6
+        },
+        {
+          "Year": 2022,
+          "Value": 24.3
+        },
+        {
+          "Year": 2023,
+          "Value": 23.7
+        },
+        {
+          "Year": 2024,
+          "Value": 23.433525173171432
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-04 Workforce Count",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 485688
+        },
+        {
+          "Year": 2022,
+          "Value": 502189
+        },
+        {
+          "Year": 2023,
+          "Value": 547875
+        },
+        {
+          "Year": 2024,
+          "Value": 681914
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 485688
+        },
+        {
+          "Year": 2022,
+          "Value": 502189
+        },
+        {
+          "Year": 2023,
+          "Value": 547875
+        },
+        {
+          "Year": 2024,
+          "Value": 681914
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-05 Saudi Workforce Share",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 0.703435195113
+        },
+        {
+          "Year": 2022,
+          "Value": 0.733621828595
+        },
+        {
+          "Year": 2023,
+          "Value": 0.743448177633
+        },
+        {
+          "Year": 2024,
+          "Value": 0.742869524634
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 0.703435195113
+        },
+        {
+          "Year": 2022,
+          "Value": 0.733621828595
+        },
+        {
+          "Year": 2023,
+          "Value": 0.743448177633
+        },
+        {
+          "Year": 2024,
+          "Value": 0.742869524634
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-06 Encounters",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 146627997.222
+        },
+        {
+          "Year": 2022,
+          "Value": 167312098.0
+        },
+        {
+          "Year": 2023,
+          "Value": 171592965.0
+        },
+        {
+          "Year": 2024,
+          "Value": 170231304.0
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 146627997.222
+        },
+        {
+          "Year": 2022,
+          "Value": 167312098.0
+        },
+        {
+          "Year": 2023,
+          "Value": 171592965.0
+        },
+        {
+          "Year": 2024,
+          "Value": 170231304.0
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-07 Encounters per Person",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 4.3
+        },
+        {
+          "Year": 2022,
+          "Value": 5.2
+        },
+        {
+          "Year": 2023,
+          "Value": 5.1
+        },
+        {
+          "Year": 2024,
+          "Value": 4.8
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 4.3
+        },
+        {
+          "Year": 2022,
+          "Value": 5.2
+        },
+        {
+          "Year": 2023,
+          "Value": 5.1
+        },
+        {
+          "Year": 2024,
+          "Value": 4.8
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-08 Admissions",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 3100752.0
+        },
+        {
+          "Year": 2022,
+          "Value": 2702460.0
+        },
+        {
+          "Year": 2023,
+          "Value": 3831824.0
+        },
+        {
+          "Year": 2024,
+          "Value": 3630334.0
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 3100752.0
+        },
+        {
+          "Year": 2022,
+          "Value": 2702460.0
+        },
+        {
+          "Year": 2023,
+          "Value": 3831824.0
+        },
+        {
+          "Year": 2024,
+          "Value": 3630334.0
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-09 Admissions per 100 Persons",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 9.1
+        },
+        {
+          "Year": 2022,
+          "Value": 8.4
+        },
+        {
+          "Year": 2023,
+          "Value": 11.3
+        },
+        {
+          "Year": 2024,
+          "Value": 10.3
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 9.1
+        },
+        {
+          "Year": 2022,
+          "Value": 8.4
+        },
+        {
+          "Year": 2023,
+          "Value": 11.3
+        },
+        {
+          "Year": 2024,
+          "Value": 10.3
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-10 Red Crescent Cases",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 458449.0
+        },
+        {
+          "Year": 2022,
+          "Value": 534912.0
+        },
+        {
+          "Year": 2023,
+          "Value": 580957.0
+        },
+        {
+          "Year": 2024,
+          "Value": 566288.0
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 458449.0
+        },
+        {
+          "Year": 2022,
+          "Value": 534912.0
+        },
+        {
+          "Year": 2023,
+          "Value": 580957.0
+        },
+        {
+          "Year": 2024,
+          "Value": 566288.0
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-11 Cases per Center",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 902.458661
+        },
+        {
+          "Year": 2022,
+          "Value": 1050.907662
+        },
+        {
+          "Year": 2023,
+          "Value": 1130.266536
+        },
+        {
+          "Year": 2024,
+          "Value": 1097.457364
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 902.458661
+        },
+        {
+          "Year": 2022,
+          "Value": 1050.907662
+        },
+        {
+          "Year": 2023,
+          "Value": 1130.266536
+        },
+        {
+          "Year": 2024,
+          "Value": 1097.457364
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    },
+    {
+      "kpi": "KPI-12 Cases per Ambulance",
+      "sql_baseline": [
+        {
+          "Year": 2021,
+          "Value": 326.530626
+        },
+        {
+          "Year": 2022,
+          "Value": 354.951559
+        },
+        {
+          "Year": 2023,
+          "Value": 435.5
+        },
+        {
+          "Year": 2024,
+          "Value": 538.296577
+        }
+      ],
+      "dax_expected": [
+        {
+          "Year": 2021,
+          "Value": 326.530626
+        },
+        {
+          "Year": 2022,
+          "Value": 354.951559
+        },
+        {
+          "Year": 2023,
+          "Value": 435.5
+        },
+        {
+          "Year": 2024,
+          "Value": 538.296577
+        }
+      ],
+      "dax_runtime_result": null,
+      "difference": null,
+      "status": "SQL_BASELINE_PASS_RUNTIME_PENDING"
+    }
+  ],
+  "sample_contexts": {
+    "Riyadh_2024": {
+      "Cases": 117881.0,
+      "FirstAidCenters": 112.0,
+      "Ambulances": 142.0,
+      "CasesPerCenter": 1052.5089285714287,
+      "CasesPerAmbulance": 830.1478873239437
+    }
+  },
+  "known_regression": 131,
+  "fy006_fy008": {
+    "rows": 24,
+    "passed": 24,
+    "failures": 0
+  }
+}

@@ -4,6 +4,24 @@ All notable validated analytical changes to this project are documented here.
 
 ---
 
+## Power BI Checkpoint 3 — Governed DAX Layer
+
+### Added
+
+- zero-business-row `_Measures` table with hidden placeholder
+- 12 approved KPI measures, all owned by `_Measures`
+- healthcare-specific display-folder organization and formats
+- static TMDL validation and read-only SQL baselines for all KPIs
+- governed DAX measure dictionary
+
+### Validation
+
+- static semantic validation: PASS
+- SQL baselines: 12 / 12 PASS
+- runtime DAX execution: PENDING Power BI Desktop reopen
+
+---
+
 ## Power BI Checkpoint 1 — Baseline Discovery
 
 ### Documented

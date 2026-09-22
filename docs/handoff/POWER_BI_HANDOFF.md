@@ -40,11 +40,12 @@ Import only these SQL Server tables from schema `analytics`:
 - `FactWorkforceSector`
 - `FactWorkforceNationality`
 
-## DAX backlog only
+## Governed DAX layer
 
-Create measures for additive counts, ratio-of-totals cases per center/ambulance,
-Saudi share, and prior-year growth. Validate each measure against the KPI
-contract and the canonical/SQL outputs before publishing.
+The dedicated `_Measures` table contains the 12 approved KPI measures for
+additive counts, official rates, Saudi workforce share, and Red Crescent
+ratio-of-totals metrics. Static and SQL-baseline validation pass; runtime DAX
+value reconciliation remains pending a Power BI Desktop reopen.
 
 ## Limitations
 
@@ -52,6 +53,5 @@ Official rates are source-published and non-additive. Health Region and Health
 Cluster are not mapped to Administrative Region. FY-029 Blood Bank is excluded
 from the core trend. No causal inference is supported by these descriptive data.
 
-Power BI files, semantic models, DAX, Power Query, and report pages are
-intentionally not created in this repository. Do not load raw Excel, canonical
-CSVs, or SQLite into the final Power BI model.
+No report pages, visuals, or report-specific measures have been created. Do
+not load raw Excel, canonical CSVs, or SQLite into the final Power BI model.
