@@ -1,138 +1,82 @@
 relationship 5506f249-88e6-4603-875b-edc1449b55aa
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactActivity'.GeographyKey
 	toColumn: 'analytics DimGeography'.GeographyKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship f8fe7804-df98-4fd8-b2c1-4baaecad93b2
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactActivity'.SectorKey
 	toColumn: 'analytics DimSector'.SectorKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship aadf8e79-106a-488f-a20e-b5db9a9a8bcd
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactActivity'.YearKey
 	toColumn: 'analytics DimYear'.YearKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 1337ed5d-910e-487d-a47b-a1d46a8cbcf4
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactCapacity'.GeographyKey
 	toColumn: 'analytics DimGeography'.GeographyKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 2e8fb32a-5bfc-42b3-a20f-dc2b7e9b4215
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactCapacity'.SectorKey
 	toColumn: 'analytics DimSector'.SectorKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 5b4987b1-f79d-4961-a68a-23510dbe99a4
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactCapacity'.YearKey
 	toColumn: 'analytics DimYear'.YearKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 0e8232a4-cf45-4847-9b7e-bc8f9bf674d1
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceNationality'.GeographyKey
 	toColumn: 'analytics DimGeography'.GeographyKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship e43b39c1-7907-4207-915e-67ce2d636842
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceNationality'.NationalityKey
 	toColumn: 'analytics DimNationality'.NationalityKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 0c024e62-1f40-404e-a36b-a03dd127f473
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceNationality'.WorkforceTypeKey
 	toColumn: 'analytics DimWorkforceType'.WorkforceTypeKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship dbd0ce92-9f13-4a73-a068-b23729430d25
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceNationality'.YearKey
 	toColumn: 'analytics DimYear'.YearKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 5180b95d-ac6c-42a0-94db-f5e12f391103
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceSector'.GeographyKey
 	toColumn: 'analytics DimGeography'.GeographyKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 26e38615-ef9e-4524-a337-910fa4481da9
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceSector'.SectorKey
 	toColumn: 'analytics DimSector'.SectorKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 8d825dd8-6542-4bb3-a051-af76a929d6cf
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceSector'.WorkforceTypeKey
 	toColumn: 'analytics DimWorkforceType'.WorkforceTypeKey
 
 	annotation PBI_IsFromSource = FS
 
 relationship 6a47d700-3f7e-4ce6-b0a6-cd80d7caa6ff
-	fromCardinality: many
-	toCardinality: one
-	crossFilteringBehavior: oneDirection
-	isActive: true
 	fromColumn: 'analytics FactWorkforceSector'.YearKey
 	toColumn: 'analytics DimYear'.YearKey
 

@@ -62,8 +62,8 @@ table _Measures
 		lineageTag: 2d3fc681-2118-4b13-ae9a-0dde60a1e04c
 
 	column Placeholder
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 213404e4-0e4c-4e24-b402-2905fbad84f9
 		summarizeBy: none
@@ -72,3 +72,4 @@ table _Measures
 	partition _Measures = calculated
 		mode: import
 		source = FILTER(ROW("Placeholder", 0), FALSE())
+

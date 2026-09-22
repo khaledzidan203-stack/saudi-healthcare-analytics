@@ -2,8 +2,8 @@ table 'analytics FactActivity'
 	lineageTag: d30aaa6e-d2af-47e9-997d-564b597e7533
 
 	column ActivityKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 3ca13b0d-94f7-42f8-a6fc-37dfa357fe4e
 		summarizeBy: count
@@ -12,8 +12,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column YearKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: d3739a21-2ffa-46aa-b85e-a95e59e2044a
 		summarizeBy: none
@@ -22,8 +22,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column GeographyKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 3a3728f2-e3c8-4202-b8fe-75e7c7dfbab2
 		summarizeBy: none
@@ -32,8 +32,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column SectorKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 8bd8525f-8d03-443e-b83a-b2f096930840
 		summarizeBy: none
@@ -68,8 +68,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceGroup
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: d5ad9386-ee77-4997-a09f-5ec3e7cbb930
 		summarizeBy: none
 		sourceColumn: SourceGroup
@@ -77,8 +77,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceWorkbook
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: cc986c60-5a4e-462a-9544-587caafac749
 		summarizeBy: none
 		sourceColumn: SourceWorkbook
@@ -86,8 +86,8 @@ table 'analytics FactActivity'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceSheet
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 46844815-f2b2-425e-98d9-392090c9b72b
 		summarizeBy: none
 		sourceColumn: SourceSheet

@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "runtime_status": "PENDING",
   "tmdl_parser": "Tabular Editor 2.28.0 loaded 10 tables, 12 measures, 14 relationships",
   "checks": [
@@ -30,7 +30,7 @@
     },
     {
       "name": "zero_row_hidden_placeholder",
-      "status": "PASS",
+      "status": "FAIL",
       "details": "FILTER(ROW(...), FALSE())"
     },
     {
@@ -45,17 +45,17 @@
     },
     {
       "name": "many_to_one_count",
-      "status": "PASS",
+      "status": "FAIL",
       "details": 14
     },
     {
       "name": "single_direction_count",
-      "status": "PASS",
+      "status": "FAIL",
       "details": 14
     },
     {
       "name": "active_relationship_count",
-      "status": "PASS",
+      "status": "FAIL",
       "details": 14
     },
     {

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d1f725c810258cbb7df2",
+  "displayName": "Executive Overview",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "hc_exec_000000000003",
+      "target": "hc_exec_000000000010",
+      "type": "NoFilter"
+    },
+    {
+      "source": "hc_exec_000000000003",
+      "target": "hc_exec_000000000011",
+      "type": "NoFilter"
+    },
+    {
+      "source": "hc_exec_000000000003",
+      "target": "hc_exec_000000000012",
+      "type": "NoFilter"
+    },
+    {
+      "source": "hc_exec_000000000003",
+      "target": "hc_exec_000000000013",
+      "type": "NoFilter"
+    },
+    {
+      "source": "hc_exec_000000000003",
+      "target": "hc_exec_000000000014",
+      "type": "NoFilter"
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#0B1220'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#0B1220'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

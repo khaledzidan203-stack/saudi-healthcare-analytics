@@ -2,8 +2,8 @@ table 'analytics DimSector'
 	lineageTag: 5b996c9e-7ba7-4435-a84d-df6730ad7d37
 
 	column SectorKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 8ab981b2-0e61-45dd-b388-d114e107f82f
 		summarizeBy: none

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "cf9ae1c6b955dbda13eb",
+  "displayName": "Healthcare Capacity",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "cap200000000000000003",
+      "target": "cap200000000000000008",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000003",
+      "target": "cap200000000000000009",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000003",
+      "target": "cap200000000000000012",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000004",
+      "target": "cap200000000000000010",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000004",
+      "target": "cap200000000000000011",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000004",
+      "target": "cap200000000000000007",
+      "type": "NoFilter"
+    },
+    {
+      "source": "cap200000000000000004",
+      "target": "cap200000000000000012",
+      "type": "NoFilter"
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#0B1220'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#0B1220'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -2,8 +2,8 @@ table 'analytics DimWorkforceType'
 	lineageTag: b6ed6e63-e807-4ea2-9eec-05e1f44a0bec
 
 	column WorkforceTypeKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: fe75d8c3-34fb-4860-85d8-4db8f7fa12c8
 		summarizeBy: none

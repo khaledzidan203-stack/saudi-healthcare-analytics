@@ -2,8 +2,8 @@ table 'analytics DimYear'
 	lineageTag: ba160ab2-0eff-4d84-bc11-fa161b98e471
 
 	column YearKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 8b030f68-b817-4223-84ff-b4dfc2b2721b
 		summarizeBy: none

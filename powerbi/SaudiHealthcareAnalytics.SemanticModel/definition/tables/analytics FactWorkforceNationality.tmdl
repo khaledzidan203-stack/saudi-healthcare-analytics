@@ -2,8 +2,8 @@ table 'analytics FactWorkforceNationality'
 	lineageTag: 485a951d-bc39-4b2e-b5bc-ac8fb3309ffb
 
 	column WorkforceNationalityKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 3f10be0a-a6ea-44fc-a9aa-f9fa47e5a92a
 		summarizeBy: count
@@ -12,8 +12,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column YearKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: df224930-444e-42ad-87b8-85a73140930c
 		summarizeBy: none
@@ -22,8 +22,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column GeographyKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 0602714d-9354-4b41-832b-c5ea1267c133
 		summarizeBy: none
@@ -40,8 +40,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column WorkforceTypeKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: ad92071b-3bd7-4e5a-90a3-801837304097
 		summarizeBy: none
@@ -50,8 +50,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column NationalityKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 70c6c99f-4b73-4a61-a64b-95aa3cb17df9
 		summarizeBy: none
@@ -77,8 +77,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceGroup
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 30444615-adf4-4f1d-bdc5-45e816ddb153
 		summarizeBy: none
 		sourceColumn: SourceGroup
@@ -86,8 +86,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceWorkbook
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 3fad48a0-bfc0-4620-8059-f8ddcd91d2d6
 		summarizeBy: none
 		sourceColumn: SourceWorkbook
@@ -95,8 +95,8 @@ table 'analytics FactWorkforceNationality'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceSheet
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: f18006d6-7399-493e-bdb2-d0db95c5140a
 		summarizeBy: none
 		sourceColumn: SourceSheet

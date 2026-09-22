@@ -45,3 +45,6 @@ dist/
 build/
 *.egg-info/
 
+powerbi/SaudiHealthcareAnalytics.SemanticModel/.pbi/
+scripts/tmp_runtime_te.csx
+powerbi/SaudiHealthcareAnalytics.Report/.pbi/

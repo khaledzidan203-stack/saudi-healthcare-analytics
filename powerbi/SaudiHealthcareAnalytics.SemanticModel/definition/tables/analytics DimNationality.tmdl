@@ -2,8 +2,8 @@ table 'analytics DimNationality'
 	lineageTag: 702192db-799b-4601-b784-50cac5c76cb2
 
 	column NationalityKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 6190fe7b-03bc-4db8-8197-fbaf76882859
 		summarizeBy: none

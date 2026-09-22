@@ -2,8 +2,8 @@ table 'analytics FactWorkforceSector'
 	lineageTag: 2940e822-4bc7-40d1-bc9e-2095a7bc3a65
 
 	column WorkforceSectorKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 37b57b76-851a-4ce8-8285-c04cf08a4d6e
 		summarizeBy: count
@@ -12,8 +12,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column YearKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: bb508cd8-ee17-416b-9d94-1af75591b0d6
 		summarizeBy: none
@@ -22,8 +22,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column GeographyKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: f71b7ffc-006c-43f2-97ec-b38cd7fe3a02
 		summarizeBy: none
@@ -32,8 +32,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column SectorKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: eb1d607a-c929-4313-92a3-e4fd583335db
 		summarizeBy: none
@@ -42,8 +42,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column WorkforceTypeKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: ef128c9e-e622-4ef4-9e86-ccda0f18bcb5
 		summarizeBy: none
@@ -79,8 +79,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceGroup
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 10112167-08ed-4579-ad3f-65fcc80eb3dc
 		summarizeBy: none
 		sourceColumn: SourceGroup
@@ -88,8 +88,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceWorkbook
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 934af8d2-9ae5-4cd2-9a62-5def651b6b58
 		summarizeBy: none
 		sourceColumn: SourceWorkbook
@@ -97,8 +97,8 @@ table 'analytics FactWorkforceSector'
 		annotation SummarizationSetBy = Automatic
 
 	column SourceSheet
-		isHidden
 		dataType: string
+		isHidden
 		lineageTag: 79f903ab-caaf-4b89-9d85-a2eb2ca73832
 		summarizeBy: none
 		sourceColumn: SourceSheet

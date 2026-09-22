@@ -2,8 +2,8 @@ table 'analytics DimGeography'
 	lineageTag: 73f2dae3-7a3c-4e0b-b9da-0d8e8b7f5df7
 
 	column GeographyKey
-		isHidden
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 0104459f-1747-44c6-b8fd-80579edad909
 		summarizeBy: none
