@@ -2,8 +2,9 @@
 
 The IDs below map in order to the 12 approved rows in
 `docs/kpi/KPI_CONTRACT.md`; assigning IDs does not change their definitions.
-All measures are owned by `_Measures`. There are no supporting or utility
-measures in this checkpoint.
+All measures are owned by `_Measures`. The 12 rows below describe the original
+runtime-validated KPI checkpoint. The final report has 15 measures after the
+approved Red Crescent count/display additions described at the end.
 
 Full four-year SQL baselines are stored in
 `outputs/validation/powerbi_dax_sql_baselines.json`.
@@ -124,6 +125,19 @@ DIVIDE(
 ## Classification
 
 - Approved KPI measures: 12
-- Supporting / utility measures: 0
+- Original checkpoint supporting / utility measures: 0
 - Year-comparison measures: 0; the approved 12-row contract does not request a
   growth KPI, so no additional YoY definition was invented.
+
+## Final report additions — checkpoint `cae3706`
+
+| Measure | Definition | Grain / behavior | Evidence |
+|---|---|---|---|
+| First Aid Centers | SUM of FactCapacity.Value filtered to First Aid Centers | Year × Administrative Region; count, compatible regional totals; missing stays blank | Current TMDL, canonical FY-018 rows and approved Red Crescent page |
+| Ambulances | SUM of FactCapacity.Value filtered to Ambulances | Year × Administrative Region; count, compatible regional totals; missing stays blank | Current TMDL, canonical FY-018 rows and approved Red Crescent page |
+| Ambulances Card | FORMAT([Ambulances], "#,0") | Text display helper, not a numeric analytical KPI; FORMAT blank renders empty text | Current TMDL and approved card |
+
+Final inventory: 15 measures, including the original 12. The original runtime
+JSON does not test these three additions; their report checkpoint and current
+source-preservation checks are separate evidence. Annual capacity snapshots
+should not be summed across years for headline reporting.

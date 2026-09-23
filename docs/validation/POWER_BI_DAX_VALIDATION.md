@@ -2,6 +2,10 @@
 
 ## Status
 
+Historical runtime checkpoint `99b573f`: the 12-measure/one-page inventory
+below describes that checkpoint only. The final report has seven pages and
+15 measures. See [current release validation](FINAL_RELEASE_VALIDATION.md).
+
 **RUNTIME PASS — 12/12 MEASURES**
 
 Tabular Editor 2.28.0 successfully loaded the TMDL model with 10 tables, 12

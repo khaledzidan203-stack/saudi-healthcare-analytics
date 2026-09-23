@@ -2,6 +2,12 @@
 
 ## Semantic model recommendation
 
+Historical pre-implementation handoff. The report is now complete at
+`a4f47c5`; page suggestions and pending statuses below record the earlier
+stage, not current tasks. Use the [Power BI guide](../../powerbi/README.md)
+and [release validation](../validation/FINAL_RELEASE_VALIDATION.md) for the
+delivered report. The connection and nine SQL import tables remain valid.
+
 Use the four validated facts and five dimensions from the SQL Server model. Relate
 each fact to `dim_year`; relate geography-compatible facts to `dim_geography`,
 sector facts to `dim_sector`, and workforce facts to their workforce and

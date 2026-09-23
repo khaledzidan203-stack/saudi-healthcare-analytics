@@ -4,11 +4,25 @@
 
 Current validated stage:
 
-**SQL Server Analytical Foundation and Governed DAX Runtime Validated**
+**Completed analytics and approved seven-page report; final portfolio release**
 
 Next planned stage:
 
-**Report page architecture / index planning**
+**Public portfolio delivery; no further analytical build required**
+
+## Reviewer navigation
+
+- [Business context, architecture and findings](../README.md)
+- [Source/data policy](../data/README.md)
+- [Canonical data contract](architecture/CANONICAL_DATA_CONTRACT.md)
+- [Data dictionary](architecture/DATA_DICTIONARY.md)
+- [SQL star schema](architecture/SQL_STAR_SCHEMA.md)
+- [KPI contract](kpi/KPI_CONTRACT.md)
+- [DAX dictionary](powerbi/DAX_MEASURE_DICTIONARY.md)
+- [Power BI opening and refresh guide](../powerbi/README.md)
+- [Seven-page screenshot gallery](../screenshots/README.md)
+- [Final validation and limitations](validation/FINAL_RELEASE_VALIDATION.md)
+- [Script index](SCRIPT_INDEX.md)
 
 ---
 
@@ -123,14 +137,11 @@ See:
 
 ---
 
-## Next Gate
+## Completed report checkpoint
 
-The SQL Server analytical star schema, SQL validation, KPI contracts, EDA
-outputs, and Power BI handoff package are prepared. Power BI implementation is
-the next user-owned step.
-
-The read-only PBIP baseline discovery and semantic hardening are documented in
-`docs/powerbi/` and passed. The dedicated `_Measures` table and 12 governed DAX
-measures now pass static TMDL and SQL-baseline validation. Runtime DAX value
-reconciliation is pending a Power BI Desktop reopen.
+`a4f47c5` finalizes Methodology & Validation after the analytical page commits.
+The original 12-measure runtime suite passed at `99b573f`. The current model
+has 15 measures and ten total tables (nine business tables plus `_Measures`).
+Earlier baseline and handoff documents remain useful historical records; use
+the final validation record above for current inventory and evidence scope.
 

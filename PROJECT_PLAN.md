@@ -11,7 +11,15 @@ using official Saudi Ministry of Health data.
 
 ## Current Phase
 
-Phase 4 — SQL Server Analytical Foundation Validated
+Final portfolio release — completed analytics packaged for public GitHub publication.
+
+Completed analytical baseline: `a4f47c5` (Methodology & Validation). The report
+has INDEX plus six approved pages. Publication keeps Executive Overview Year
+= 2024 and opens at INDEX. See [release validation](docs/validation/FINAL_RELEASE_VALIDATION.md).
+
+The following phase list preserves the original plan, not a claim that every
+proposed feature was implemented. The delivered SQL model loads canonical CSVs
+directly into `analytics`; no separate RAW/STAGING SQL layers are claimed.
 
 ## Planned Phases
 
@@ -110,7 +118,7 @@ Phase 4 — SQL Server Analytical Foundation Validated
 - Reproduction instructions
 - LinkedIn case study
 
-## Out of Scope Until Discovery Is Complete
+## Historical restrictions during discovery (superseded by completed checkpoints)
 
 - Cleaning source files
 - Final KPI selection

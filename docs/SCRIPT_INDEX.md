@@ -262,6 +262,10 @@ Superseded `08_build_canonical_dataset.py` is removed from the active codebase.
 
 ## SQL and analytical preparation
 
+SQL Server is the final reporting source. SQLite scripts are historical
+reference utilities, not a competing production source. See [SQL execution
+order](../sql/README.md).
+
 - `scripts/build_sqlite_model.py` — load validated canonical CSVs into the
   SQLite star schema.
 - `scripts/validate_sqlite_model.py` — reconcile SQL row counts, keys, foreign
@@ -273,3 +277,14 @@ Superseded `08_build_canonical_dataset.py` is removed from the active codebase.
 - `scripts/validate_sqlserver_model.py` — independently validate SQL Server
   grains, keys, joins, canonical reconciliation, SQLite reconciliation, and
   workforce cross-source totals.
+
+## Final release audit
+
+- `scripts/validate_release.py` — offline current-report JSON, navigation,
+  semantic-source preservation, canonical claims, screenshot integrity,
+  documentation links, Python syntax and publication-file checks. Writes
+  `outputs/validation/final_release_validation.json`.
+- `scripts/validate_powerbi_dax_runtime.ps1` and
+  `scripts/validate_powerbi_dax_static.py` retain assumptions from the original
+  12-measure/one-page checkpoint. Do not interpret their inventory assertions
+  as current seven-page release requirements.

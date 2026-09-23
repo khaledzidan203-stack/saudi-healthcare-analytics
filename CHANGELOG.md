@@ -2,6 +2,25 @@
 
 All notable validated analytical changes to this project are documented here.
 
+## 2026-09-23 — Public portfolio release
+
+- Package the completed canonical dataset, SQL Server analytics layer,
+  semantic hardening and governed DAX without changing analytical logic.
+- Preserve the approved report through `a4f47c5` —
+  `feat(powerbi): finalize methodology validation page`.
+- Keep the approved Executive Overview Year = 2024 selection and set INDEX
+  as the opening page.
+- Publish seven genuine report screenshots, a gallery, source/refresh guides,
+  architecture and evidence-linked README, and original-code MIT license.
+- Separate original 12-measure runtime evidence from final 15-measure report
+  inventory; document nine business tables plus `_Measures` (ten total).
+- Add offline release validation and dependency completeness (`pyodbc`).
+- Exclude local environments, caches, report binaries and an unrelated
+  LinkedIn editing screenshot. Untrack the reproducible SQLite file while
+  retaining the local copy and historical public-data reference in Git.
+- Final validation distinguishes current structural checks, semantic source
+  preservation, recorded data reconciliation and owner-approved manual QA.
+
 ---
 
 ## Power BI Checkpoint 4 — Runtime DAX Recovery

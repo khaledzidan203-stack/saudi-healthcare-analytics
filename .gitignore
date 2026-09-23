@@ -12,6 +12,7 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.venv-1/
 venv/
 env/
 
@@ -48,3 +49,17 @@ build/
 powerbi/SaudiHealthcareAnalytics.SemanticModel/.pbi/
 scripts/tmp_runtime_te.csx
 powerbi/SaudiHealthcareAnalytics.Report/.pbi/
+
+# Reproducible local databases and report binaries
+*.sqlite
+*.sqlite-journal
+*.db
+*.bak
+*.mdf
+*.ldf
+*.pbix
+**/localSettings.json
+**/DAXQueries/
+
+# Unrelated LinkedIn editing capture, retained locally only
+/screenshots/Screenshot 2026-09-21 180146.png

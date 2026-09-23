@@ -1,0 +1,396 @@
+{
+  "status": "PASS",
+  "analytical_baseline": "a4f47c5",
+  "scope": "Offline publication checks; historical SQL/DAX evidence is not a new live execution",
+  "checks": [
+    {
+      "name": "approved_checkpoint",
+      "status": "PASS",
+      "details": "a4f47c5"
+    },
+    {
+      "name": "json_parsing",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "page_inventory_and_opening",
+      "status": "PASS",
+      "details": [
+        "INDEX",
+        "Executive Overview",
+        "Healthcare Capacity",
+        "Healthcare Activity",
+        "Workforce & Nationalization",
+        "Red Crescent Regional Performance",
+        "Methodology & Validation"
+      ]
+    },
+    {
+      "name": "visual_id_uniqueness",
+      "status": "PASS",
+      "details": {
+        "total": 121,
+        "pages": {
+          "INDEX": 8,
+          "Executive Overview": 15,
+          "Healthcare Capacity": 13,
+          "Healthcare Activity": 15,
+          "Workforce & Nationalization": 13,
+          "Red Crescent Regional Performance": 14,
+          "Methodology & Validation": 43
+        }
+      }
+    },
+    {
+      "name": "home_and_navigation",
+      "status": "PASS",
+      "details": {
+        "home_buttons": 6,
+        "navigation_targets": 12
+      }
+    },
+    {
+      "name": "methodology_visual_inventory",
+      "status": "PASS",
+      "details": 43
+    },
+    {
+      "name": "methodology_short_rows",
+      "status": "PASS",
+      "details": 29
+    },
+    {
+      "name": "executive_default_2024",
+      "status": "PASS",
+      "details": "Year slicer saved at 2024"
+    },
+    {
+      "name": "powerbi_preserved_except_approved_state",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "analytical_sources_unchanged",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "semantic_inventory",
+      "status": "PASS",
+      "details": {
+        "business_tables": 9,
+        "total_tables": 10,
+        "measures": 15,
+        "relationships": 14
+      }
+    },
+    {
+      "name": "relationship_defaults",
+      "status": "PASS",
+      "details": [
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        },
+        {
+          "from": "many",
+          "to": "one",
+          "direction": "oneDirection",
+          "active": "true"
+        }
+      ]
+    },
+    {
+      "name": "unambiguous_star_paths",
+      "status": "PASS",
+      "details": "Unique single-direction dimension-to-fact edges; no chains or fact-to-fact edges"
+    },
+    {
+      "name": "auto_date_disabled",
+      "status": "PASS",
+      "details": "No auto date/time"
+    },
+    {
+      "name": "sql_partitions",
+      "status": "PASS",
+      "details": "Nine SQL Import sources; unchanged from approved baseline"
+    },
+    {
+      "name": "fact_capacity_rows",
+      "status": "PASS",
+      "details": 132
+    },
+    {
+      "name": "fact_activity_rows",
+      "status": "PASS",
+      "details": 84
+    },
+    {
+      "name": "fact_workforce_sector_rows",
+      "status": "PASS",
+      "details": 72
+    },
+    {
+      "name": "fact_workforce_nationality_rows",
+      "status": "PASS",
+      "details": 96
+    },
+    {
+      "name": "headline_Hospitals",
+      "status": "PASS",
+      "details": {
+        "canonical": "516",
+        "recorded_SQL": 516
+      }
+    },
+    {
+      "name": "headline_Beds",
+      "status": "PASS",
+      "details": {
+        "canonical": "82721",
+        "recorded_SQL": 82721
+      }
+    },
+    {
+      "name": "headline_Encounters",
+      "status": "PASS",
+      "details": {
+        "canonical": "170231304",
+        "recorded_SQL": 170231304
+      }
+    },
+    {
+      "name": "headline_Admissions",
+      "status": "PASS",
+      "details": {
+        "canonical": "3630334",
+        "recorded_SQL": 3630334
+      }
+    },
+    {
+      "name": "headline_Red Crescent Cases",
+      "status": "PASS",
+      "details": {
+        "canonical": "566288",
+        "recorded_SQL": 566288
+      }
+    },
+    {
+      "name": "headline_Workforce Count",
+      "status": "PASS",
+      "details": {
+        "canonical": "681914",
+        "recorded_SQL": 681914
+      }
+    },
+    {
+      "name": "headline_Saudi Workforce Share",
+      "status": "PASS",
+      "details": {
+        "canonical": "0.7428695246349756650443362891",
+        "recorded_SQL": 0.742869524634
+      }
+    },
+    {
+      "name": "historical_runtime_evidence",
+      "status": "PASS",
+      "details": "Recorded original 12-measure checkpoint; not a new live DAX execution"
+    },
+    {
+      "name": "historical_sql_evidence",
+      "status": "PASS",
+      "details": "Recorded SQL integrity and canonical reconciliation; no SQL rebuild"
+    },
+    {
+      "name": "original_runtime_measures_unchanged",
+      "status": "PASS",
+      "details": "All original 12 expressions match the runtime-approved checkpoint"
+    },
+    {
+      "name": "workforce_cross_source_evidence",
+      "status": "PASS",
+      "details": "24/24 recorded PASS, count variance zero"
+    },
+    {
+      "name": "screenshot_00_index.png",
+      "status": "PASS",
+      "details": {
+        "width": 1372,
+        "height": 861,
+        "sha256": "E2F09EC821AAF042D0BEA117BADD6EC5E1F072DF67EA540A4AE0FE028D0A9E7B"
+      }
+    },
+    {
+      "name": "screenshot_01_executive_overview.png",
+      "status": "PASS",
+      "details": {
+        "width": 1740,
+        "height": 865,
+        "sha256": "2DF018CF5F266B21E67C812447C476B57B1D45CCD234E815B41D7E08A79A2C63"
+      }
+    },
+    {
+      "name": "screenshot_02_healthcare_capacity.png",
+      "status": "PASS",
+      "details": {
+        "width": 1741,
+        "height": 862,
+        "sha256": "19A0F254A5FC9A21CE7FA823EB13EA724E71B1B053DEC7F0CF06A619BA88AC0F"
+      }
+    },
+    {
+      "name": "screenshot_03_healthcare_activity.png",
+      "status": "PASS",
+      "details": {
+        "width": 1740,
+        "height": 862,
+        "sha256": "6B1E35444A280DFC5A865A79BA5E846D66795F8ECC1D0DEBC65E635DACE83B8D"
+      }
+    },
+    {
+      "name": "screenshot_04_workforce_nationalization.png",
+      "status": "PASS",
+      "details": {
+        "width": 1740,
+        "height": 865,
+        "sha256": "79372D86CBAC4D39AC6BA325DB1397156C374F6A6ABBE22856066580D5698FA2"
+      }
+    },
+    {
+      "name": "screenshot_05_red_crescent_regional_performance.png",
+      "status": "PASS",
+      "details": {
+        "width": 1741,
+        "height": 866,
+        "sha256": "7EB1530A095B6628C617B2E07D6B2348807EA29CCBF4C311EAA152F1616A907E"
+      }
+    },
+    {
+      "name": "screenshot_06_methodology_validation.png",
+      "status": "PASS",
+      "details": {
+        "width": 1740,
+        "height": 865,
+        "sha256": "D2AC9BB6D9605C418673BA4CC28DE3BA9DBF54D7E90956062C3FB5D12CA345BF"
+      }
+    },
+    {
+      "name": "exact_screenshot_set",
+      "status": "PASS",
+      "details": [
+        "00_index.png",
+        "01_executive_overview.png",
+        "02_healthcare_capacity.png",
+        "03_healthcare_activity.png",
+        "04_workforce_nationalization.png",
+        "05_red_crescent_regional_performance.png",
+        "06_methodology_validation.png"
+      ]
+    },
+    {
+      "name": "local_markdown_links",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "python_syntax",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "sql_sources_present",
+      "status": "PASS",
+      "details": "SQL Server DDL present"
+    },
+    {
+      "name": "publication_exclusions",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "no_large_payloads",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "credential_pattern_scan",
+      "status": "PASS",
+      "details": []
+    }
+  ]
+}
