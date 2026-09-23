@@ -5,6 +5,48 @@
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "wf3000000000000000003",
+      "target": "wf3000000000000000008",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000003",
+      "target": "wf3000000000000000009",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000004",
+      "target": "wf3000000000000000011",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000004",
+      "target": "wf3000000000000000007",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000004",
+      "target": "wf3000000000000000009",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000004",
+      "target": "wf3000000000000000012",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000005",
+      "target": "wf3000000000000000010",
+      "type": "NoFilter"
+    },
+    {
+      "source": "wf3000000000000000005",
+      "target": "wf3000000000000000012",
+      "type": "NoFilter"
+    }
+  ],
   "objects": {
     "background": [
       {
