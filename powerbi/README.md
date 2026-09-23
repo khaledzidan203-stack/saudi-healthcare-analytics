@@ -1,5 +1,9 @@
 # Power BI project
 
+## Opening the project
+
+If you download the repository with GitHub's **Download ZIP**, extract the archive completely before opening `SaudiHealthcareAnalytics.pbip`. Power BI Project files depend on the adjacent `SaudiHealthcareAnalytics.Report` and `SaudiHealthcareAnalytics.SemanticModel` folders and will fail if opened from inside the compressed ZIP.
+
 Open [SaudiHealthcareAnalytics.pbip](SaudiHealthcareAnalytics.pbip) in Power BI Desktop with PBIP/PBIR/TMDL support. The report is in `SaudiHealthcareAnalytics.Report/`; the model is in `SaudiHealthcareAnalytics.SemanticModel/`.
 
 ## Connection and refresh
