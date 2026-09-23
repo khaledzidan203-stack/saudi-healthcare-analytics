@@ -61,6 +61,44 @@ table _Measures
 		displayFolder: 05 Red Crescent / Regional
 		lineageTag: 2d3fc681-2118-4b13-ae9a-0dde60a1e04c
 
+	measure 'First Aid Centers' = ```
+			
+			        CALCULATE(
+			            SUM('analytics FactCapacity'[Value]),
+			            KEEPFILTERS(
+			                'analytics FactCapacity'[CapacityMeasure] = "First Aid Centers"
+			            )
+			        )
+			```
+		formatString: 0
+		lineageTag: 3e13c588-b4ac-41d6-b609-c26c2513de5c
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure Ambulances = ```
+			
+			        CALCULATE(
+			            SUM('analytics FactCapacity'[Value]),
+			            KEEPFILTERS(
+			                'analytics FactCapacity'[CapacityMeasure] = "Ambulances"
+			            )
+			        )
+			```
+		formatString: 0
+		lineageTag: cf02da64-eaaf-4bd3-bcf3-03f356f8d6ff
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Ambulances Card' = ```
+			
+			        FORMAT(
+			            [Ambulances],
+			            "#,0"
+			        )
+			```
+		lineageTag: 80edb9c6-a767-4e8f-9b8c-b66be8d0cce3
+
 	column Placeholder
 		dataType: int64
 		isHidden

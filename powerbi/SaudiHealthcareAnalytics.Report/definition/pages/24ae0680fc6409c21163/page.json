@@ -5,6 +5,38 @@
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "rc5000000000000000003",
+      "target": "rc5000000000000000008",
+      "type": "NoFilter"
+    },
+    {
+      "source": "rc5000000000000000003",
+      "target": "rc5000000000000000009",
+      "type": "NoFilter"
+    },
+    {
+      "source": "rc5000000000000000003",
+      "target": "rc5000000000000000010",
+      "type": "NoFilter"
+    },
+    {
+      "source": "rc5000000000000000004",
+      "target": "rc5000000000000000011",
+      "type": "NoFilter"
+    },
+    {
+      "source": "rc5000000000000000004",
+      "target": "rc5000000000000000012",
+      "type": "NoFilter"
+    },
+    {
+      "source": "rc5000000000000000004",
+      "target": "rc5000000000000000013",
+      "type": "NoFilter"
+    }
+  ],
   "objects": {
     "background": [
       {
