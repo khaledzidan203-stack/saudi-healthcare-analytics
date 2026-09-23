@@ -6,6 +6,20 @@ An end-to-end analytics and analytics-engineering portfolio project using offici
 
 ![Executive Overview — genuine Power BI capture with 2024 selected](screenshots/01_executive_overview.png)
 
+> **Opening from GitHub:** If you use **Download ZIP**, extract the ZIP completely before opening `powerbi/SaudiHealthcareAnalytics.pbip`. Power BI Project files depend on the adjacent `.Report` and `.SemanticModel` folders and will not open correctly from inside the compressed archive.
+
+## Featured Portfolio
+
+**Khaled Zidan — Healthcare & Business Data Analytics**
+
+[Saudi Healthcare Analytics](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics) ·
+[Hospital360](https://github.com/khaledzidan203-stack/Hospital360) ·
+[Online Retail Growth & Customer Intelligence](https://github.com/khaledzidan203-stack/online-retail-growth-customer-intelligence) ·
+[Pharmacy Category Management](https://github.com/khaledzidan203-stack/pharmacy-category-management) ·
+[Regional Sales Performance](https://github.com/khaledzidan203-stack/regional-sales-analytics-portfolio)
+
+**Core stack:** Power BI · SQL · Python · DAX · Analytics Engineering · Healthcare / Pharmacy / Retail Analytics
+
 ## Executive Summary
 
 Seven report pages bring annual healthcare resources and service volumes into a consistent analytical model. Each indicator is connected to its source, grain and validation evidence. This is a reproducible portfolio project, not a deployed or live embedded dashboard. Screenshots show captured filter states; source workbooks remain immutable and local.
