@@ -6,7 +6,7 @@ An end-to-end healthcare analytics implementation built from **official Saudi Mi
 
 > **Scope boundary:** this repository contains aggregate public healthcare statistics, not patient-level data. Results are descriptive and do not establish patient outcomes, causality, service quality, or emergency response-time performance.
 
-<img src="docs/assets/Saudi%20Healthcare%20Analytics%20Pipeline%20Infographic.png" alt="Saudi Healthcare Analytics end-to-end project pipeline" width="100%">
+<img src="docs/assets/Saudi%20Healthcare%20Analytics%20Pipeline.png" alt="Saudi Healthcare Analytics end-to-end governed analytical pipeline" width="100%">
 
 **Start here:** [Case study](docs/CASE_STUDY.md) · [Technical walkthrough](docs/TECHNICAL_WALKTHROUGH.md) · [Evidence map](docs/PROJECT_EVIDENCE_MAP.md) · [Project index](docs/PROJECT_INDEX.md) · [Final validation](docs/validation/FINAL_RELEASE_VALIDATION.md)
 
