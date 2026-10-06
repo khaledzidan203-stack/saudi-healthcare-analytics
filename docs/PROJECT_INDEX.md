@@ -1,82 +1,61 @@
-﻿# Saudi Healthcare Capacity & Performance Analytics 2021–2024
+# Saudi Healthcare Analytics 2021–2024
 
-## Project Status
+## Current release status
 
-Current validated stage:
+The analytical build is complete and source-controlled as a seven-page Power BI project with governed canonical data, SQL Server modeling, explicit KPI contracts, validation evidence, and reproducible release checks.
 
-**Completed analytics and approved seven-page report; final portfolio release**
+## Navigation
 
-Next planned stage:
+| Area | Entry point |
+|---|---|
+| Project overview | [README](../README.md) |
+| Visual architecture | [Project overview graphic](assets/saudi-healthcare-analytics-overview.svg) |
+| Case study | [CASE_STUDY.md](CASE_STUDY.md) |
+| Technical walkthrough | [TECHNICAL_WALKTHROUGH.md](TECHNICAL_WALKTHROUGH.md) |
+| Evidence map | [PROJECT_EVIDENCE_MAP.md](PROJECT_EVIDENCE_MAP.md) |
+| Current source governance | [SOURCE_GOVERNANCE_STATUS.md](SOURCE_GOVERNANCE_STATUS.md) |
+| Source / data policy | [data/README.md](../data/README.md) |
+| Canonical contract | [architecture/CANONICAL_DATA_CONTRACT.md](architecture/CANONICAL_DATA_CONTRACT.md) |
+| Data dictionary | [architecture/DATA_DICTIONARY.md](architecture/DATA_DICTIONARY.md) |
+| SQL star schema | [architecture/SQL_STAR_SCHEMA.md](architecture/SQL_STAR_SCHEMA.md) |
+| KPI contract | [kpi/KPI_CONTRACT.md](kpi/KPI_CONTRACT.md) |
+| DAX dictionary | [powerbi/DAX_MEASURE_DICTIONARY.md](powerbi/DAX_MEASURE_DICTIONARY.md) |
+| Semantic model | [powerbi/POWER_BI_SEMANTIC_MODEL.md](powerbi/POWER_BI_SEMANTIC_MODEL.md) |
+| Power BI opening / refresh | [powerbi/README.md](../powerbi/README.md) |
+| Report captures | [screenshots/README.md](../screenshots/README.md) |
+| Final validation | [validation/FINAL_RELEASE_VALIDATION.md](validation/FINAL_RELEASE_VALIDATION.md) |
+| Script inventory | [SCRIPT_INDEX.md](SCRIPT_INDEX.md) |
+| Data attribution | [DATA_ATTRIBUTION.md](../DATA_ATTRIBUTION.md) |
 
-**Public portfolio delivery; no further analytical build required**
+## Analytical workflow
 
-## Reviewer navigation
+```text
+Business / analytical scope
+        ↓
+Source discovery
+        ↓
+Grain + geography review
+        ↓
+Canonical contracts
+        ↓
+Python transformation
+        ↓
+Canonical validation
+        ↓
+SQL Server analytical model
+        ↓
+KPI contracts
+        ↓
+Power BI semantic model + DAX
+        ↓
+PBIR report
+        ↓
+Reconciliation + release validation
+```
 
-- [Business context, architecture and findings](../README.md)
-- [Source/data policy](../data/README.md)
-- [Canonical data contract](architecture/CANONICAL_DATA_CONTRACT.md)
-- [Data dictionary](architecture/DATA_DICTIONARY.md)
-- [SQL star schema](architecture/SQL_STAR_SCHEMA.md)
-- [KPI contract](kpi/KPI_CONTRACT.md)
-- [DAX dictionary](powerbi/DAX_MEASURE_DICTIONARY.md)
-- [Power BI opening and refresh guide](../powerbi/README.md)
-- [Seven-page screenshot gallery](../screenshots/README.md)
-- [Final validation and limitations](validation/FINAL_RELEASE_VALIDATION.md)
-- [Script index](SCRIPT_INDEX.md)
+## Implemented analytical scope
 
----
-
-## Analytical Workflow
-
-Business Context  
-→ Problem / Decision  
-→ Analytical Questions  
-→ Source Discovery  
-→ Grain & Geography Review  
-→ Data Quality  
-→ Source Selection  
-→ Data Contract  
-→ Canonical Transformation  
-→ Validation / Reconciliation  
-→ SQL Model  
-→ KPI Contracts  
-→ Analysis  
-→ Power BI  
-→ Portfolio Publication
-
----
-
-## Completed Phases
-
-### Phase 1A — Workbook Inventory
-
-Official MOH Excel workbooks were inventoried without modifying raw source files.
-
-### Phase 1B — Comprehensive Discovery
-
-All available worksheets were structurally profiled.
-
-### Phase 1C — Discovery Catalog & Scope
-
-Cross-year analytical candidates were identified and the project scope was narrowed to high-value healthcare domains.
-
-### Phase 2A — Data Contract Validation
-
-Shortlisted sources were inspected for structural, geography, unit and grain compatibility.
-
-### Phase 2B — Core Source Validation
-
-Selected source tables were manually reviewable side-by-side across 2021–2024.
-
-### Phase 3 — Canonical Dataset
-
-Validated source groups were transformed into canonical facts and dimensions with lineage and reconciliation.
-
----
-
-## Current Core Analytical Scope
-
-### Healthcare Capacity
+### Healthcare capacity
 
 - Hospitals
 - Beds
@@ -84,7 +63,15 @@ Validated source groups were transformed into canonical facts and dimensions wit
 - First Aid Centers
 - Ambulances
 
-### Healthcare Workforce
+### Healthcare activity
+
+- Encounters
+- Encounters per person
+- Inpatients / Admissions
+- Admissions per 100 persons
+- Saudi Red Crescent cases
+
+### Healthcare workforce
 
 - Physicians
 - Dentists
@@ -92,56 +79,39 @@ Validated source groups were transformed into canonical facts and dimensions wit
 - Midwives
 - Pharmacists
 - Allied Health Personnel
-- Saudi workforce percentage
-- Saudi / Non-Saudi workforce
-- PHC workforce
+- Saudi / Non-Saudi workforce composition
+- MOH Primary Health Care workforce scope
 
-### Healthcare Activity
+## Geography contract
 
-- Encounters
-- Encounters per person
-- Inpatients / admissions
-- Admissions per 100 persons
-- Saudi Red Crescent cases
-
----
-
-## Geography Contract
-
-Current Core model supports:
+Approved core concepts:
 
 - National — Saudi Arabia
-- Administrative Region
+- Administrative Region — 13 Saudi administrative regions
 
-The following concepts remain separate and are not automatically mapped:
+Kept separate:
 
 - Health Region
 - Health Cluster
-- Administrative Region
 
----
+No automatic equivalence is assumed between those geography systems.
 
-## Source Policy
+## Current model inventory
 
-Official raw source workbooks remain immutable and are excluded from Git.
+- Canonical layer: 4 facts + 5 dimensions
+- SQL business tables: 9
+- Power BI semantic tables: 10 total, including disconnected `_Measures`
+- Relationships: 14 active M:1 single-direction
+- Current measures: 15
+- Report pages: 7
+- Saved visuals: 121
 
-Canonical analytical datasets are reproducible through project scripts.
+## Validation boundary
 
----
+The original 12 governed DAX measures have recorded runtime PASS evidence. The current model contains three later approved Red Crescent additions that are validated by source/model/release evidence but are not represented as if they belonged to the earlier 12-measure runtime suite.
 
-## Current Production Scripts
+The final release record remains the authoritative summary of current checks and historical evidence scope.
 
-See:
+## Historical project records
 
-`docs/SCRIPT_INDEX.md`
-
----
-
-## Completed report checkpoint
-
-`a4f47c5` finalizes Methodology & Validation after the analytical page commits.
-The original 12-measure runtime suite passed at `99b573f`. The current model
-has 15 measures and ten total tables (nine business tables plus `_Measures`).
-Earlier baseline and handoff documents remain useful historical records; use
-the final validation record above for current inventory and evidence scope.
-
+Discovery summaries, handoff documents, earlier checkpoints, and the historical all-`PENDING` `FINAL_SOURCE_APPROVAL.csv` are intentionally preserved as development history. They should not override the implemented contracts, current source-governance note, saved Power BI model, or final release validation.
