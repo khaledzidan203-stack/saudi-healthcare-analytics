@@ -1,184 +1,184 @@
-# Saudi Healthcare Analytics
+# Saudi Healthcare Analytics 2021–2024
 
-An end-to-end analytics and analytics-engineering portfolio project using official Saudi Ministry of Health statistics for **2021–2024**. Python source profiling, governed canonical data, SQL Server and Power BI connect healthcare capacity, activity, workforce and regional emergency resources to traceable reporting.
+[![Repository Validation](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics/actions/workflows/portfolio-validation.yml)
 
-[Report gallery](screenshots/README.md) · [Documentation index](docs/PROJECT_INDEX.md) · [Release validation](docs/validation/FINAL_RELEASE_VALIDATION.md) · [Power BI project](powerbi/README.md)
+An end-to-end healthcare analytics implementation built from **official Saudi Ministry of Health Statistical Yearbooks for 2021–2024**. The project moves from workbook discovery and governed canonical modeling to SQL Server, a source-controlled Power BI semantic model, explicit DAX measures, report delivery, and layered validation.
 
-![Executive Overview — genuine Power BI capture with 2024 selected](screenshots/01_executive_overview.png)
+> **Scope boundary:** this repository contains aggregate public healthcare statistics, not patient-level data. Results are descriptive and do not establish patient outcomes, causality, service quality, or emergency response-time performance.
 
-> **Opening from GitHub:** If you use **Download ZIP**, extract the ZIP completely before opening `powerbi/SaudiHealthcareAnalytics.pbip`. Power BI Project files depend on the adjacent `.Report` and `.SemanticModel` folders and will not open correctly from inside the compressed archive.
+![Saudi Healthcare Analytics project overview](docs/assets/saudi-healthcare-analytics-overview.svg)
 
-## Featured Portfolio
+**Start here:** [Case study](docs/CASE_STUDY.md) · [Technical walkthrough](docs/TECHNICAL_WALKTHROUGH.md) · [Evidence map](docs/PROJECT_EVIDENCE_MAP.md) · [Project index](docs/PROJECT_INDEX.md) · [Final validation](docs/validation/FINAL_RELEASE_VALIDATION.md)
 
-**Khaled Zidan — Healthcare & Business Data Analytics**
+## Project at a glance
 
-[Saudi Healthcare Analytics](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics) ·
-[Hospital360](https://github.com/khaledzidan203-stack/Hospital360) ·
-[Online Retail Growth & Customer Intelligence](https://github.com/khaledzidan203-stack/online-retail-growth-customer-intelligence) ·
-[Pharmacy Category Management](https://github.com/khaledzidan203-stack/pharmacy-category-management) ·
-[Regional Sales Performance](https://github.com/khaledzidan203-stack/regional-sales-analytics-portfolio)
-
-**Core stack:** Power BI · SQL · Python · DAX · Analytics Engineering · Healthcare / Pharmacy / Retail Analytics
-
-## Executive Summary
-
-Seven report pages bring annual healthcare resources and service volumes into a consistent analytical model. Each indicator is connected to its source, grain and validation evidence. This is a reproducible portfolio project, not a deployed or live embedded dashboard. Screenshots show captured filter states; source workbooks remain immutable and local.
-
-## Business Problem
-
-Official workbooks mix reporting years, geography concepts, subtotals, published rates and detailed counts. Comparing them without contracts can double-count workforce, combine incompatible geographic units or aggregate rates incorrectly. This project separates those concepts before reporting them.
-
-## Analytical Questions
-
-- How do hospital capacity and official population-adjusted rates vary by year?
-- How do encounters and admissions compare across sectors and time?
-- How do workforce scale, profession mix and MOH Saudi workforce share differ?
-- Where are Red Crescent cases, centers and ambulances concentrated?
-- Which source definitions and reconciliation checks support each result?
-
-## Project Highlights
-
-| Deliverable | Verified scope |
+| Area | Implemented state |
 |---|---|
-| Canonical layer | Four facts and five dimensions; explicit grains and source lineage |
-| SQL Server | Governed `analytics` schema; canonical reconciliation recorded PASS |
-| Semantic model | Nine SQL business tables plus disconnected `_Measures`: **10 tables total** |
-| Relationships | **14** active M:1, single direction; no fact-to-fact relationships |
-| Measures | **15** total: 12 original governed KPIs, two Red Crescent counts, one display helper |
-| Report | INDEX plus six approved report pages |
-| Evidence | Original 12 KPI measures have recorded SQL ↔ DAX runtime PASS; later report approval is tracked separately |
+| Source | Saudi MOH Statistical Yearbooks — 2021–2024 |
+| Analytical domains | Capacity · Activity · Workforce · Red Crescent regional resources/activity |
+| Geography | National + Administrative Region; Health Region/Cluster kept separate |
+| Canonical layer | 9 governed CSV tables: 4 facts + 5 dimensions |
+| SQL | SQL Server `SaudiHealthcareAnalytics`, schema `analytics` |
+| Semantic model | 10 tables total · 14 active M:1 single-direction relationships |
+| Measures | 15 current measures; original 12 have recorded runtime reconciliation |
+| Power BI | 7 PBIR pages · 121 uniquely identified saved visuals |
+| Validation | Canonical↔SQL PASS · workforce 24/24 PASS · original DAX 12/12 PASS |
+| Reproducibility | Included canonical CSVs + SQL loaders + PBIP/PBIR/TMDL source + release audit |
 
-The [final validation record](docs/validation/FINAL_RELEASE_VALIDATION.md) separates current checks from historical evidence. The Methodology screenshot's “9 tables” counts business tables; `_Measures` makes the total ten.
+## Why the modeling matters
 
-## Technology Stack
+The source is not one flat, perfectly consistent table. Annual workbooks combine changing layouts, multiple healthcare domains, national totals, Administrative Region detail, sector splits, workforce snapshots, and published non-additive rates. A naive merge can duplicate historical observations, mix geography concepts, multiply joins, or aggregate rates incorrectly.
 
-Python, pandas, NumPy and openpyxl support discovery and workbook handling; canonical and SQL loaders also use Python's standard library. pyodbc connects SQL Server. Power Query imports SQL tables; TMDL, DAX and PBIR define the model and report. SQLite is a reproducible historical comparison baseline, not the reporting source.
+The implementation therefore follows these controls:
 
-## End-to-End Architecture
+1. **Source and grain before aggregation** — each fact has an explicit business grain and source lineage.
+2. **Separate analytical facts** — capacity, activity, workforce-by-sector, and workforce-by-nationality are not collapsed into one ambiguous table.
+3. **Published rates stay non-additive** — official rates are never blindly summed across categories.
+4. **Geography remains governed** — National and Administrative Region are approved concepts; Health Region and Health Cluster are not silently treated as equivalent.
+5. **Validation is layered** — canonical data, SQL integrity, DAX behavior, report structure, screenshots, and release hygiene are checked separately.
+
+## End-to-end architecture
 
 ```mermaid
 flowchart LR
-    A[Official MOH workbooks] --> B[Profiling and contracts]
-    B --> C[Canonical CSV facts and dimensions]
-    C --> D[SQL Server analytics schema]
-    C --> E[Validation and reconciliation]
-    D --> E
+    A[Official Saudi MOH yearbooks] --> B[Python discovery & profiling]
+    B --> C[Governed canonical layer]
+    C --> D[4 facts + 5 dimensions]
+    D --> E[SQL Server analytics schema]
     E --> F[Power BI semantic model]
-    F --> G[Governed DAX]
-    G --> H[PBIR report]
-    H --> I[Healthcare management analysis]
+    F --> G[Governed DAX measures]
+    G --> H[7-page PBIR report]
+    C --> V[Canonical validation]
+    E --> V
+    F --> V
+    H --> V
+    V --> Q[Release audit / CI]
 ```
 
-[Canonical contract](docs/architecture/CANONICAL_DATA_CONTRACT.md) · [SQL model](docs/architecture/SQL_STAR_SCHEMA.md) · [Semantic model](docs/powerbi/POWER_BI_SEMANTIC_MODEL.md)
+### 1. Source discovery
 
-## Data Sources
+Python inventories workbooks and worksheets, profiles structure, reviews candidate grains and geography concepts, and narrows the usable cross-year scope before transformation.
 
-Approved MOH yearbook source families are FY-005 Hospitals/Beds, FY-006 Health Manpower, FY-008 Workforce/Nationality, FY-010 Primary Health Care, FY-018 Red Crescent, FY-020 Encounters and FY-023 Admissions.
+Raw yearbook files remain outside Git. The repository includes aggregate canonical outputs and lineage needed for reproducible analytical reconstruction. See [data provenance](data/README.md) and [current source governance](docs/SOURCE_GOVERNANCE_STATUS.md).
 
-The core uses National and Administrative Region geography. FY-029 Blood Bank is excluded where changing definitions prevent comparable trends. Health Regions and Health Clusters are not assumed equivalent to Administrative Regions. Each year comes from its own yearbook, not duplicated rolling historical columns.
+### 2. Canonical data layer
 
-[Source acquisition](data/README.md) · [Source approval register](outputs/validation/FINAL_SOURCE_APPROVAL.csv)
-
-## Canonical Data Model
+The governed canonical model contains four facts:
 
 | Fact | Rows | Natural grain |
 |---|---:|---|
-| FactCapacity | 132 | Year × geography type/name × sector × capacity measure |
-| FactActivity | 84 | Year × geography type/name × sector × activity measure |
-| FactWorkforceSector | 72 | Year × national geography × sector × workforce type |
-| FactWorkforceNationality | 96 | Year × national geography × scope × workforce type × nationality |
+| `FactCapacity` | 132 | Year × geography type/name × sector × capacity measure |
+| `FactActivity` | 84 | Year × geography type/name × sector × activity measure |
+| `FactWorkforceSector` | 72 | Year × national geography × sector × workforce type |
+| `FactWorkforceNationality` | 96 | Year × national geography × scope × workforce type × nationality |
 
-Dimensions are Year, Geography, Sector, WorkforceType and Nationality. Facts remain separate; dimensions filter facts in one direction. Keys and grain constraints prevent join multiplication. [Data dictionary](docs/architecture/DATA_DICTIONARY.md).
+Dimensions are Year, Geography, Sector, WorkforceType, and Nationality.
 
-## KPI Governance
+The canonical contract prevents duplicate rolling historical observations by taking each reporting year from its corresponding Statistical Yearbook rather than loading repeated historical columns from later editions. See [Canonical Data Contract](docs/architecture/CANONICAL_DATA_CONTRACT.md).
 
-The [KPI contract](docs/kpi/KPI_CONTRACT.md) and [DAX dictionary](docs/powerbi/DAX_MEASURE_DICTIONARY.md) specify numerator, denominator, grain, filters and aggregation.
+### 3. SQL Server analytical model
 
-- Capacity: Hospitals, Beds and official Beds per 10,000 Population.
-- Activity: Encounters, Encounters per Person, Admissions and Admissions per 100 Persons.
-- Workforce: Workforce Count and **MOH Total** Saudi Workforce Share; the share is not an all-sector nationalization rate.
-- Red Crescent: Cases, First Aid Centers, Ambulances, Cases per Center and Cases per Ambulance. `Ambulances Card` is a display helper, not another KPI.
+SQL Server is the final reporting engine. The `analytics` schema loads the five dimensions and four facts using surrogate keys, unique grain constraints, retained lineage, and decimal precision suitable for published rates.
 
-Annual workforce snapshots must not be summed across years. Official population rates are national, non-additive source values, not sector rates. Aggregate ratios use ratio of totals with `DIVIDE`; missing, blank and zero are not interchangeable.
+Validated controls include:
 
-## Power BI Report
+- broken foreign keys = **0**;
+- duplicate fact grains = **0**;
+- canonical ↔ SQL Server reconciliation = **PASS**;
+- joined row-count preservation = **PASS**.
+
+SQLite is retained only as a reproducible cross-engine reference baseline. It is **not** the Power BI reporting source. See [SQL Star Schema](docs/architecture/SQL_STAR_SCHEMA.md).
+
+### 4. Power BI semantic model
+
+The saved PBIP/TMDL model contains:
+
+- nine SQL-backed business tables;
+- one disconnected `_Measures` table;
+- **10 total semantic tables**;
+- **14 active M:1 single-direction relationships**;
+- no fact-to-fact, many-to-many, bidirectional, or inactive relationships;
+- **15 current measures**.
+
+This is an annual-grain model. Auto Date/Time is disabled and no artificial daily date table is introduced. See [Power BI Semantic Model](docs/powerbi/POWER_BI_SEMANTIC_MODEL.md).
+
+## KPI governance
+
+The [KPI contract](docs/kpi/KPI_CONTRACT.md) defines numerator, denominator, grain, filters, aggregation behavior, and null handling.
+
+Examples:
+
+- **Hospitals / Beds / Encounters / Admissions** — compatible additive counts.
+- **Beds per 10,000 Population / Encounters per Person / Admissions per 100 Persons** — official published rates, treated as non-additive.
+- **Saudi Workforce Share** — Saudi ÷ (Saudi + Non-Saudi) over the governed `MOH Total` scope.
+- **Cases per Center / Cases per Ambulance** — ratio of totals, never average of row-level ratios.
+
+Missing, blank, and zero are not interchangeable. Annual workforce snapshots are not summed across years.
+
+## Power BI report
 
 | Page | Purpose |
 |---|---|
-| INDEX | Opening page; navigation to the six report pages |
-| Executive Overview | Selected-year headlines and full-period trends; default year 2024 |
-| Healthcare Capacity | Hospitals, beds, sector mix and national capacity rates |
-| Healthcare Activity | Encounters, admissions, sector volumes and official rates |
-| Workforce & Nationalization | Annual workforce mix and MOH nationality composition |
-| Red Crescent Regional Performance | Regional cases, centers and ambulances |
-| Methodology & Validation | Source lineage, contracts, validation and limitations |
+| INDEX | Opening navigation page |
+| Executive Overview | Selected-year headlines and full-period trends; saved at 2024 |
+| Healthcare Capacity | Hospitals, beds, sector mix, and official capacity rates |
+| Healthcare Activity | Encounters, admissions, sector volume, and official activity rates |
+| Workforce & Nationalization | Workforce composition and MOH nationality mix |
+| Red Crescent Regional Performance | Cases, first-aid centers, ambulances, and regional resource ratios |
+| Methodology & Validation | Source lineage, model rules, validation, and limitations |
 
-HOME buttons return to INDEX. [Opening and refresh instructions](powerbi/README.md).
+The current release contains **121 uniquely identified visuals**. Genuine report captures are preserved in [screenshots](screenshots/README.md).
 
-## Dashboard Gallery
+## Validation evidence
 
-Genuine, unaltered report captures, not live embedded reports. [View all seven pages](screenshots/README.md).
+Validation statements are deliberately separated by evidence type:
 
-![Healthcare Capacity](screenshots/02_healthcare_capacity.png)
-
-![Red Crescent Regional Performance](screenshots/05_red_crescent_regional_performance.png)
-
-## Validation & Reconciliation
-
-| Validation | Evidence |
+| Validation layer | Recorded result |
 |---|---|
-| Broken foreign keys, duplicate fact grains and join multiplication: zero | [SQL Server validation](outputs/validation/sqlserver_validation.json) |
-| Canonical ↔ SQL Server reconciliation: PASS | [SQL Server validation](outputs/validation/sqlserver_validation.json) |
-| FY006 ↔ FY008: 24/24 PASS | [Cross-source reconciliation](outputs/validation/workforce_cross_source_reconciliation.csv) |
-| Original governed DAX suite: 12/12 runtime PASS | [Runtime checkpoint](outputs/validation/powerbi_dax_runtime_validation.json) |
-| Current structure, source preservation and publication checks | [Release audit](outputs/validation/final_release_validation.json) |
-| Manual report QA, including Methodology | Approved checkpoints through `a4f47c5`; [evidence scope](docs/validation/FINAL_RELEASE_VALIDATION.md) |
+| Canonical fact grain / required coverage | PASS |
+| SQL Server canonical reconciliation | PASS |
+| Broken foreign keys | 0 |
+| Duplicate fact grains | 0 |
+| FY006 ↔ FY008 workforce reconciliation | 24 / 24 PASS; zero count variance |
+| Original governed DAX suite | 12 / 12 runtime PASS |
+| Current semantic structure | 10 tables · 15 measures · 14 relationships |
+| Report structure | 7 pages · 121 visuals · navigation checks PASS |
+| Release audit | PBIR/JSON parsing, links, screenshots, source preservation, exclusions, credential scan |
 
-Publication checks are not a new SQL rebuild, Power BI refresh or live retest of all 15 measures. Earlier one-page/12-measure outputs remain historical evidence, not current report inventories.
+The current model has **15 measures**, while the retained runtime JSON covers the **original 12 governed measures**. The later `First Aid Centers`, `Ambulances`, and `Ambulances Card` additions are approved current-model additions, but they are not presented as if they were part of that earlier 12-measure runtime suite. See [DAX Measure Dictionary](docs/powerbi/DAX_MEASURE_DICTIONARY.md) and [Final Release Validation](docs/validation/FINAL_RELEASE_VALIDATION.md).
 
-## Selected Validated Findings
+## Selected validated 2024 observations
 
-The existing [SQL/DAX artifact](outputs/validation/powerbi_dax_runtime_validation.json) records these 2024 values; release checks compare them with the current canonical CSVs:
+The release audit reconciles these current canonical headlines with recorded SQL evidence:
 
 | Indicator | 2024 value | Scope |
 |---|---:|---|
 | Hospitals | 516 | National, all sectors |
 | Beds | 82,721 | National, all sectors |
 | Workforce Count | 681,914 | National, approved sector/profession detail |
-| Saudi Workforce Share | 74.29% | MOH Total nationality workforce only |
+| Saudi Workforce Share | 74.29% | `MOH Total` nationality workforce only |
 | Encounters | 170,231,304 | National, all sectors |
 | Admissions | 3,630,334 | National, all sectors |
-| Red Crescent Cases | 566,288 | Administrative regions aggregated |
+| Red Crescent Cases | 566,288 | Administrative Regions aggregated |
 
-These are descriptive observations. Screenshot labels such as “83K” and “4M” are display rounding, not replacement baselines.
+These are descriptive observations, not performance ratings.
 
-## Data Quality & Analytical Limitations
+## Source governance and exclusions
 
-Published rates retain official definitions and precision. Geography, scope and definition differences restrict comparisons. Annual counts are not evidence of individual patient outcomes or causality. Red Crescent volumes describe workload and capacity, not response time or service quality. Screenshots do not prove every filter combination.
+The current analytical core uses FY-005, FY-006, FY-008, FY-010, FY-018, FY-020, and FY-023. FY-029 Blood Bank is excluded from the comparable multi-year core because available definitions change materially across years.
 
-## Repository Structure
+`outputs/validation/FINAL_SOURCE_APPROVAL.csv` is preserved as a **historical discovery-stage review artifact** and still contains `PENDING` values. It is not the current release-status register. The implemented scope is documented in [Source Governance Status](docs/SOURCE_GOVERNANCE_STATUS.md).
 
-```text
-data/          Canonical CSVs and source policy; local SQLite reference excluded
-docs/          Contracts, model, KPIs, validation and handoff history
-outputs/       Discovery, reconciliation and descriptive analytical evidence
-powerbi/       PBIP entry point, PBIR report and TMDL model
-screenshots/   Seven approved captures and gallery
-scripts/       SQL loaders, validators and release audit
-sql/           SQL Server DDL and labeled SQLite reference scripts
-src/           Source discovery and canonical transformation
-README.md
-CHANGELOG.md
-PROJECT_PLAN.md
-requirements.txt
-LICENSE
-```
+## Reproduce the analytical project
 
-Local `row_data/`, environments and Power BI caches are excluded. Empty scaffold directories are not presented as implemented functionality.
+Prerequisites:
 
-## Reproduce the Project
-
-Prerequisites: Python with the [listed dependencies](requirements.txt), SQL Server, Microsoft ODBC Driver 18, Windows Authentication, and Power BI Desktop supporting these PBIP/PBIR/TMDL files.
+- Python 3
+- dependencies in [`requirements.txt`](requirements.txt)
+- SQL Server
+- Microsoft ODBC Driver 18
+- Windows Authentication
+- Power BI Desktop supporting PBIP/PBIR/TMDL
 
 ```powershell
 git clone https://github.com/khaledzidan203-stack/saudi-healthcare-analytics.git
@@ -189,9 +189,7 @@ python -m pip install -r requirements.txt
 python scripts/verify_repository_baseline.py
 ```
 
-Included canonical CSVs allow SQL/report reproduction without raw workbooks. To reproduce from Excel, follow [source placement and transformation instructions](data/README.md).
-
-Create an empty dedicated `SaudiHealthcareAnalytics` database on `localhost` using SSMS and Windows Authentication. The SQL loader **drops and recreates the nine analytical tables**; use only a dedicated development database. [SQL execution order](sql/README.md).
+For SQL/report reproduction, the included canonical CSVs are sufficient. Create a dedicated local `SaudiHealthcareAnalytics` database, then follow [`sql/README.md`](sql/README.md). The SQL loader drops and recreates the analytical tables, so it should be used only in a dedicated development database.
 
 ```powershell
 python scripts/build_sqlite_model.py
@@ -199,14 +197,35 @@ python scripts/build_sqlserver_model.py
 python scripts/validate_sqlserver_model.py
 ```
 
-SQLite is built because the SQL Server validator compares its reference counts. Open `powerbi/SaudiHealthcareAnalytics.pbip`, authenticate to SQL Server and refresh in Import mode. [Power BI guide](powerbi/README.md).
+Open `powerbi/SaudiHealthcareAnalytics.pbip`, authenticate to SQL Server, and refresh in Import mode. If downloading the repository as ZIP, extract it completely before opening the PBIP file.
 
-Offline publication checks: `python scripts/validate_release.py`.
+Offline publication validation:
 
-## Source Attribution
+```powershell
+python scripts/validate_release.py
+```
 
-Saudi Ministry of Health, [official Statistical Yearbook portal](https://www.moh.gov.sa/en/ministry/statistics/book/pages/default.aspx), checked during release preparation. Workbook/sheet lineage is retained in canonical data and the [lineage output](outputs/validation/source_lineage.csv).
+Full Excel-to-canonical reproduction requires separately downloaded official MOH workbooks. Source files can change upstream, so replacement inputs must be revalidated rather than assumed identical. See [data reproduction](data/README.md).
 
-## License
+## Repository structure
 
-[MIT](LICENSE) applies to original project code and documentation. Official MOH data, derived source values and third-party assets remain subject to provider terms; no MOH data license or ownership is claimed. Screenshots contain provider-derived statistics.
+```text
+data/          Aggregate canonical data and source/reproduction policy
+docs/          Contracts, case study, governance, semantic model, validation
+outputs/       Discovery, reconciliation, and validation evidence
+powerbi/       PBIP entry point, PBIR report, TMDL semantic model
+screenshots/   Seven approved report captures
+scripts/       SQL loaders, model validators, and release audit
+sql/           SQL Server DDL plus labeled SQLite reference SQL
+src/           Workbook discovery and canonical transformation
+```
+
+## Interpretation limits
+
+Published rates retain source definitions and precision. Geography and scope differences constrain comparisons. Workforce counts are annual snapshots. Red Crescent cases, centers, and ambulances describe workload/resources, not response time or service quality. Screenshots validate captured states, not every possible interactive filter combination.
+
+## Source attribution and license
+
+Saudi Ministry of Health — official Statistical Yearbook publications. See [Data Attribution and Usage Boundary](DATA_ATTRIBUTION.md).
+
+[MIT](LICENSE) applies to original project code and documentation. Provider data and third-party materials remain subject to their original terms.
