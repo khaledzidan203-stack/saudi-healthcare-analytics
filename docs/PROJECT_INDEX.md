@@ -9,7 +9,7 @@ The analytical build is complete and source-controlled as a seven-page Power BI 
 | Area | Entry point |
 |---|---|
 | Project overview | [README](../README.md) |
-| Visual architecture | [Project overview graphic](assets/Saudi%20Healthcare%20Analytics%20Pipeline%20Infographic.png) |
+| Visual architecture | [Project overview graphic](assets/Saudi%20Healthcare%20Analytics%20Pipeline.png) |
 | Case study | [CASE_STUDY.md](CASE_STUDY.md) |
 | Technical walkthrough | [TECHNICAL_WALKTHROUGH.md](TECHNICAL_WALKTHROUGH.md) |
 | Evidence map | [PROJECT_EVIDENCE_MAP.md](PROJECT_EVIDENCE_MAP.md) |
