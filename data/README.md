@@ -1,10 +1,12 @@
 # Data provenance and reproduction
 
-Provider: Saudi Ministry of Health. Acquire workbooks from the [official Statistical Yearbook portal](https://www.moh.gov.sa/en/ministry/statistics/book/pages/default.aspx). The 2021–2024 inputs are public yearbook workbooks. Provider terms apply; the MIT license does not relicense the data.
+Provider: Saudi Ministry of Health. Acquire workbooks from the [official Statistical Yearbook portal](https://www.moh.gov.sa/en/ministry/statistics/book/pages/default.aspx). The 2021–2024 inputs are public yearbook workbooks. Provider terms apply; the repository MIT license does not relicense the data.
 
 ## Included data
 
-`processed/canonical/` contains nine small governed CSV tables with workbook/sheet lineage. These are aggregate public statistics, not patient-level records. Counts and grains are defined in the [canonical contract](../docs/architecture/CANONICAL_DATA_CONTRACT.md). Discovery and validation outputs document selection and exclusions.
+`processed/canonical/` contains nine small governed CSV tables with workbook/sheet lineage: four facts and five dimensions. These are aggregate public statistics, not patient-level records. Counts, grains and aggregation behavior are defined in the [canonical contract](../docs/architecture/CANONICAL_DATA_CONTRACT.md).
+
+The current implemented source scope is documented in [Source Governance Status](../docs/SOURCE_GOVERNANCE_STATUS.md). `outputs/validation/FINAL_SOURCE_APPROVAL.csv` is retained as an earlier discovery-stage review artifact whose rows remain `PENDING`; it is not the current release-status register.
 
 ## Local raw placement
 
@@ -19,11 +21,11 @@ Place the eight unchanged workbooks in root `row_data/` with these names (extrac
 - `Statistical-Yearbook-2023.xlsx`
 - `Statistical-Yearbook-2024.xlsx`
 
-Raw files are excluded to avoid duplicating provider downloads. Preserve source sheets and cached formula values. Provider versions can change: compare the [workbook inventory](../outputs/tables/workbook_sheet_inventory.csv) and [approval register](../outputs/validation/FINAL_SOURCE_APPROVAL.csv) before accepting replacement inputs. No automatic downloader or pinned provider archive is implemented.
+Raw files are excluded to avoid duplicating provider downloads. Preserve source sheets and cached formula values. Provider versions can change: compare the [workbook inventory](../outputs/tables/workbook_sheet_inventory.csv), [source lineage](../outputs/validation/source_lineage.csv) and governed source scope before accepting replacement inputs. No automatic downloader or pinned provider archive is implemented.
 
 ## Reproduction paths
 
-For SQL/report reproduction, use included canonical CSVs and the [SQL guide](../sql/README.md).
+For SQL/report reproduction, use the included canonical CSVs and the [SQL guide](../sql/README.md).
 
 For full Excel reproduction in a separate working copy, run `src/discovery/` scripts 01 through 06 in order, then:
 
@@ -37,4 +39,8 @@ These scripts regenerate outputs and some documentation. FY-005, FY-006, FY-008,
 
 ## Local database reference
 
-`python scripts/build_sqlite_model.py` regenerates `processed/sqlite/healthcare_analytics.sqlite` for cross-engine checks. The release tree excludes generated databases, backups, raw workbooks and environments. A small public-data SQLite reference remains in pre-release Git history, which is preserved. Power BI uses SQL Server only.
+`python scripts/build_sqlite_model.py` regenerates `processed/sqlite/healthcare_analytics.sqlite` for cross-engine checks. SQLite is a reference baseline only; Power BI uses SQL Server. The release tree excludes generated databases, backups, raw workbooks and environments. A small public-data SQLite reference remains in pre-release Git history, which is preserved.
+
+## Attribution
+
+See [`DATA_ATTRIBUTION.md`](../DATA_ATTRIBUTION.md) for the software/data licensing boundary.
