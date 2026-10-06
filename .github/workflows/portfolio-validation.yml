@@ -1,0 +1,44 @@
+name: Repository Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Static analytical quality gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Protect validated analytical core
+        shell: bash
+        run: |
+          BASELINE=f802f67b1c68fbd7c7ebc145fa82f0e18c5adc55
+          git cat-file -e "$BASELINE^{commit}"
+          git diff --exit-code "$BASELINE" HEAD -- \
+            data/processed/canonical \
+            powerbi \
+            screenshots \
+            src \
+            sql
+
+      - name: Run offline release audit
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python scripts/validate_release.py
