@@ -2,7 +2,17 @@
 
 All notable validated analytical changes to this project are documented here.
 
-## 2026-09-23 — Public portfolio release
+## 2026-10-06 — Governance and presentation hardening
+
+- Reorganized the main README around source scope, grain, architecture, KPI governance, Power BI, validation, and reproduction.
+- Added an evidence-aligned visual architecture, case study, technical walkthrough, and project evidence map.
+- Added a current source-governance note clarifying that `FINAL_SOURCE_APPROVAL.csv` is a preserved discovery-stage artifact whose rows remain `PENDING`, not the current release-status register.
+- Separated the standard MIT software license from provider-data attribution and usage boundaries.
+- Updated the environment example to reflect the current SQL Server / Windows Authentication implementation.
+- Added read-only GitHub Actions validation using the existing release audit and protected analytical baselines.
+- Preserved canonical data, SQL/Python analytical logic, DAX, TMDL, PBIR, report screenshots, and validated analytical results.
+
+## 2026-09-23 — Public release
 
 - Package the completed canonical dataset, SQL Server analytics layer,
   semantic hardening and governed DAX without changing analytical logic.
@@ -185,7 +195,7 @@ Added:
 Added:
 
 - four-year comparability candidates
-- core portfolio candidates
+- core analytical candidates
 - geography contract review
 - manual validation queue
 
